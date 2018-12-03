@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://www.ted.com/talks/jer_thorp_make_data_more_human -->
+<html class="js loggedout js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths cors" lang="en"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="./Jer Thorp_ Make data more human _ TED Talk_files/f.txt"></script><script src="./Jer Thorp_ Make data more human _ TED Talk_files/amp4ads-host-v0.js"></script><script src="./Jer Thorp_ Make data more human _ TED Talk_files/pubads_impl_rendering_276.js"></script><script async="" src="./Jer Thorp_ Make data more human _ TED Talk_files/tcn.js"></script><script async="" src="./Jer Thorp_ Make data more human _ TED Talk_files/beacon.js"></script><script async="" src="./Jer Thorp_ Make data more human _ TED Talk_files/analytics.js"></script><script async="" type="text/javascript" src="./Jer Thorp_ Make data more human _ TED Talk_files/gpt.js"></script><script>
+  (function (H){
+  H.className=H.className.replace(/\bno-js\b/,'js');
+  if (('; '+document.cookie).match(/; _ted_user_id=/)) H.className=H.className.replace(/\bloggedout\b/,'loggedin');
+  })(document.documentElement)
+</script>
+<title>Jer Thorp: Make data more human | TED Talk</title>
+<link rel="canonical" href="https://www.ted.com/talks/jer_thorp_make_data_more_human">
+<meta name="apple-itunes-app" content="app-id=376183339,app-argument=https://www.ted.com/talks/jer_thorp_make_data_more_human?utm_source=ted.com&amp;utm_medium=referral&amp;utm_campaign=smart_app_banner">
+<link rel="alternate" hreflang="x-default" href="https://www.ted.com/talks/jer_thorp_make_data_more_human">
+<meta name="description" content="Jer Thorp creates beautiful data visualizations to put abstract data into a human context. At TEDxVancouver, he shares his moving projects, from graphing an entire year&#39;s news cycle, to mapping the way people share articles across the internet.">
+<meta name="keywords" content="TED, talks, TEDx, data, design, media, news">
+<meta name="medium" content="video">
+<meta name="author" content="Jer Thorp">
+<link rel="alternate" type="application/json+oembed" title="oEmbed Profile" href="https://www.ted.com/services/v1/oembed.json?url=https%3A%2F%2Fwww.ted.com%2Ftalks%2Fjer_thorp_make_data_more_human">
+<link rel="alternate" type="application/xml+oembed" title="oEmbed Profile" href="https://www.ted.com/services/v1/oembed.xml?url=https%3A%2F%2Fwww.ted.com%2Ftalks%2Fjer_thorp_make_data_more_human">
+<meta property="fb:app_id" content="201021956610141">
+<meta property="og:url" content="https://www.ted.com/talks/jer_thorp_make_data_more_human">
+<meta property="og:title" content="Make data more human">
+<meta property="og:image" content="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/a4f077eed3635ebc7e54065bacc739de19626a39_800x600.jpg?c=1050%2C550&amp;w=1050">
+<meta property="og:image:secure_url" content="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/a4f077eed3635ebc7e54065bacc739de19626a39_800x600.jpg?c=1050%2C550&amp;w=1050">
+<meta property="og:image:width" content="1050">
+<meta property="og:image:height" content="550">
+<meta property="og:type" content="video.other">
+<meta property="og:video:duration" content="1042.0">
+<meta property="og:video:tag" content="TEDx">
+<meta property="og:video:tag" content="data">
+<meta property="og:video:tag" content="design">
+<meta property="og:video:tag" content="media">
+<meta property="og:video:tag" content="news">
+<meta property="og:video:release_date" content="1332597708">
+<meta property="al:ios:app_name" content="TED">
+<meta property="al:ios:app_store_id" content="376183339">
+<meta property="al:ios:url" content="ted://talks/1400?source=facebook">
+<meta property="al:android:app_name" content="TED">
+<meta property="al:android:package" content="com.ted.android">
+<meta property="al:android:url" content="ted://talks/jer_thorp_make_data_more_human?source=facebook">
+<meta name="rss-feed" content="https://www.ted.com/feeds/talks.rss">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@tedtalks">
+<meta property="twitter:image" content="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/a4f077eed3635ebc7e54065bacc739de19626a39_800x600.jpg?w=1200">
+<meta name="twitter:app:id:iphone" content="376183339">
+<meta name="twitter:app:id:ipad" content="376183339">
+<meta name="twitter:app:id:googleplay" content="com.ted.android">
+<meta name="twitter:app:name:ipad" content="TED">
+<meta name="twitter:app:name:iphone" content="TED">
+<meta name="twitter:app:name:googleplay" content="TED">
+<meta name="twitter:app:url:ipad" content="ted://talks/1400?source=twitter">
+<meta name="twitter:app:url:iphone" content="ted://talks/1400?source=twitter">
+<meta property="twitter:app:url:googleplay" content="https://www.ted.com/talks/jer_thorp_make_data_more_human">
+<link rel="mask-icon" href="https://pa.tedcdn.com/mask-icon.svg" color="#E62B1E" sizes="any">
+<meta name="theme-color" content="#E62B1E">
+<link rel="shortcut icon" href="https://pa.tedcdn.com/favicon.ico">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="TED Talks">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="https://pa.tedcdn.com/apple-touch-icon.png">
+<link rel="apple-touch-icon-precomposed" href="https://pa.tedcdn.com/apple-touch-icon-precomposed.png">
+<meta name="application-name" content="TED Talks">
+<meta name="msapplication-config" content="https://www.ted.com/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#000000">
+<meta http-equiv="cleartype" content="on">
+<meta name="title" content="Jer Thorp: Make data more human">
+<meta property="og:description" content="Jer Thorp creates beautiful data visualizations to put abstract data into a human context. At TEDxVancouver, he shares his moving projects, from graphing an entire year&#39;s news cycle, to mapping the way people share articles across the internet."><!-- (+-CONTENT-IS-LIVE-SUCCESS-+) --><link href="./Jer Thorp_ Make data more human _ TED Talk_files/750758b5212c04c746e1.chunk.js" rel="prefetch">
+<link href="./Jer Thorp_ Make data more human _ TED Talk_files/c14904318f5fada7428f.chunk.js" rel="prefetch">
+<link href="./Jer Thorp_ Make data more human _ TED Talk_files/global-719f83bbfccffaed69d0.chunk.css" rel="stylesheet">
+<link href="./Jer Thorp_ Make data more human _ TED Talk_files/shed-8f43fdf9168fa3a32e8c.chunk.css" rel="stylesheet">
+<link href="./Jer Thorp_ Make data more human _ TED Talk_files/talk-9907c602da158db604da.chunk.css" rel="stylesheet"><script>
+  if(top != self) top.location.replace(location);
+</script><script>
+  (function(i,r,l,d,o){
+    i.__gaIn=function(){(i[r].q=i[r].q||[]).push(arguments)};
+    i['GoogleAnalyticsObject']=r;i[r]=i[r]||__gaIn,i[r].l=1*new Date();
+    if(l && d!="yes" && d!="1") o.userId=l[2];
+    __ga('create',"UA-40781755-2",'ted.com',o);
+    __ga('set',"dimension3",'logged'+(l ? 'In' : 'Out'));
+  })(window,"__ga",('; '+document.cookie).match(/; (_ted_user_id|_explr_uid)=(\d+);/),(window.navigator && window.navigator.doNotTrack),{});
+</script><script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  
+  googletag.cmd.push(function() {
+    googletag.pubads().enableAsyncRendering();
+    googletag.enableServices();
+  });
+</script><script>
+  _q=[];q=function(){_q.push(arguments)};
+  _g=[];g=function(){_g.push(arguments)};
+  
+  TED = {"env":"production","assetBuster":1543524208,"playerPath":"//pb.tedcdn.com/assets/player/flash_hls/player_4_01_002.swf","assetHost":"https://pa.tedcdn.com","authHost":"https://auth.ted.com","settingsUrl":"https://www.ted.com/settings/account","signInUrl":"/session/new","signOutUrl":"https://auth.ted.com/session/logout","signInHelpUrl":"https://auth.ted.com/account/password/new","signUpUrl":"/users/new","csClientId":"7341760","gaDimensions":{"breakpoint":"dimension1","talkId":"dimension2","authState":"dimension3","playlistId":"dimension5","testId":"dimension7","embedZone":"dimension8","gaClientId":"dimension9","tedUserId":"dimension10","playContext":"dimension11","sourceContext":"dimension12","playbackRate":"dimension13","playerMode":"dimension14","proxy":"dimension15","playToken":"dimension16","subtitleLanguage":"dimension17","playerPresentation":"dimension18","videoType":"dimension19","listHasProgress":"dimension20","exploreState":"dimension21","hasEndorsement":"dimension22","exploreCTASource":"dimension23"}};
+  TED.headReady = new Date();
+  TED.signOutUrl += '?referer=' + location.protocol + '//' + location.host + '/session/logout';
+  
+  TED.startTime = new Date();
+  TED.isFirstVisit = !document.cookie.match(/; _ga=/);
+  
+  TED.abby = (function () {
+    var abs=(document.cookie.match(/_abby_(\w+)=(\w+)/g) || []), dms=[], ts={}, t;
+    for (var i=-1, l=abs.length; ++i < l;) {
+      t = abs[i].match(/_abby_(\w+)=(\w+)/);
+      ts[t[1]] = t[2];
+      tstr = t[1] + ':' + t[2];
+      if (dms.indexOf(tstr) < 0) dms.push(tstr);
+    }
+    if (dms.length) {
+      __ga('set', "dimension7", dms.join(','));
+    }
+    return {tests: ts}
+  }());
+</script>
+<script>
+  TED.abby.overridden = false;
+  TED.abby.disabled = false;
+  TED.abby.tests.feedback_3 = "a";
+  TED["controller"]="talks";TED["zone"]={"api_key":"talk_page_2","ga_category":"videoplayer","ad_unit_path":"talk","ad_targeting":{}}
+</script><style type="text/css"></style><style data-emotion=""></style><meta name="description" content="Jer Thorp creates beautiful data visualizations to put abstract data into a human context. At TEDxVancouver, he shares his moving projects, from graphing an entire year&#39;s news cycle, to mapping the way people share articles across the internet." data-react-helmet="true"><link rel="preload" href="./Jer Thorp_ Make data more human _ TED Talk_files/f(1).txt" as="script"><script type="text/javascript" src="./Jer Thorp_ Make data more human _ TED Talk_files/f(1).txt"></script><link rel="preload" href="./Jer Thorp_ Make data more human _ TED Talk_files/f(2).txt" as="script"><script type="text/javascript" src="./Jer Thorp_ Make data more human _ TED Talk_files/f(2).txt"></script><script src="./Jer Thorp_ Make data more human _ TED Talk_files/pubads_impl_276.js" async=""></script><link rel="prefetch" href="https://tpc.googlesyndication.com/safeframe/1-0-31/html/container.html"></head>
+<body class="talks-body">
+<div class="shoji" id="shoji">
+<div class="shoji__fixtures" id="shoji-fixtures"></div>
+<div class="shoji__door">
+<div class="page shoji__washi">
+<noscript>
+<div class='alert alert--flash alert--warning'>
+<div class='container'>
+<div class='h9'>You have JavaScript disabled</div>
+For the best experience, please turn JavaScript on.
+<a href='https://enable-javascript.com/'>Here's how</a>
+</div>
+</div>
+</noscript>
+<script>
+  (function(d,h){
+    if (('; '+d.cookie).match(/; _uconf=0;/)) {
+      d.write(h);
+      g('uconf.init',"uconf","uconf-close");
+    }
+  }(document,"<div class='alert alert--flash alert--warning' id='uconf'>\n<div class='container'>\n<div class='alert__container'><h4 class='h10 m5'>Your account isn't active yet.</h4>Please click on the confirmation link we sent you.\nIf you don't receive the email within ten minutes, we can\n<a href='https://auth.ted.com/account/confirmation/new'>send it again</a>.\n<a class='alert__close g g-button-modal-close' href='#' id='uconf-close'>Close</a>\n</div>\n</div>\n</div>\n"))
+</script><nav class="Main-nav Main-nav--inverted Main-nav/Popper" id="main-nav" role="navigation">
+<div class="Main-nav/Popper__smoke Main-nav__smoke z-i:9" id="main-nav-popper-smoke"></div>
+<div class="hide-lg fl:l d:n@lg" role="presentation">
+<a aria-haspopup="true" class="Main-nav__item Main-nav__label f-w:700 t-t:u undec" href="https://www.ted.com/talks/jer_thorp_make_data_more_human#" onclick="g(&#39;mainNav.openHamburger&#39;); return false" role="button"><span class="if-no-svg">Menu</span>
+<svg baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0, 0, 512, 512" class="if-svg Main-nav__icon Main-nav__icon--hamburger"><title>Main menu</title><path d="M12 80h488v56H12V80zM12 228h488v56H12v-56zM12 376h488v56H12v-56z"></path></svg></a>
+</div>
+<a class="Main-nav__home-button ga-link" data-ga-action="home" data-ga-category="navigation.item" data-ga-label="/" href="https://www.ted.com/" rel="home">
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="54" viewBox="0, 0, 96, 54" class="Main-nav__logo"><title>TED</title><rect x="0" y="0" width="640" height="360" fill="none"></rect><path d="M21.244 21.053h-6.761V14.85h21.012v6.203h-6.762V39.15h-7.489V21.053zm15.414-6.203h20.43v6.203H44.147v2.992h12.941v5.837H44.147v3.065h12.941v6.203h-20.43v-24.3zm21.666 0h12.287c8.071 0 10.906 5.984 10.906 12.114 0 7.443-3.926 12.186-12.36 12.186H58.324v-24.3zm7.489 18.097h2.908c4.653 0 5.308-3.794 5.308-6.056 0-1.533-.509-5.765-5.89-5.765H65.74l.073 11.821z" fill="#E62B1E"></path></svg>
+<div class="Main-nav__motto c:white f-w:200 fl:l p-x:0 show-lg" role="presentation"><span class="">Ideas worth spreading</span></div>
+</a>
+<div class="pos:a right:0 Main-nav__bar" role="presentation">
+<ul class="sl fl:l show-lg" role="menubar">
+<li class="pos:r fl:l z-i:10 Main-nav__category" data-popper-name="watch" data-popper-root="" role="presentation">
+<a aria-haspopup="" class="Main-nav__category__label Main-nav__item Main-nav__label f-w:700 t-t:u undec" data-popper-target="" href="https://www.ted.com/talks/jer_thorp_make_data_more_human#" onclick="return false" role="menuitem">Watch</a>
+<ul aria-hidden="" class="Main-nav/Popper__popup Main-nav__category__list popup popup--inverse popup--tailed popup--tailed--center popup--tailed--top sl" role="menu">
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="watch" data-ga-category="navigation.item" data-ga-label="/talks" href="https://www.ted.com/talks">
+<div class="f-w:700 m-b:.1">TED Talks</div>
+<div class="c:gray">Browse the library of TED talks and speakers</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="watch" data-ga-category="navigation.item" data-ga-label="/recommends?exploreCTASource=main-nav.item" href="https://www.ted.com/recommends?exploreCTASource=main-nav.item">
+<div class="f-w:700 m-b:.1">TED Recommends</div>
+<div class="c:gray">Get TED Talks picked just for you</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="watch" data-ga-category="navigation.item" data-ga-label="/playlists" href="https://www.ted.com/playlists">
+<div class="f-w:700 m-b:.1">Playlists</div>
+<div class="c:gray">100+ collections of TED Talks, for curious minds</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="watch" data-ga-category="navigation.item" data-ga-label="/series" href="https://www.ted.com/series">
+<div class="f-w:700 m-b:.1">TED Series</div>
+<div class="c:gray">Go deeper into fascinating topics with original video series from TED.</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="watch" data-ga-category="navigation.item" data-ga-label="/watch/ted-ed" href="https://www.ted.com/watch/ted-ed">
+<div class="f-w:700 m-b:.1">TED-Ed videos</div>
+<div class="c:gray">Watch, share and create lessons with TED-Ed</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="watch" data-ga-category="navigation.item" data-ga-label="/watch/tedx-talks" href="https://www.ted.com/watch/tedx-talks">
+<div class="f-w:700 m-b:.1">TEDx Talks</div>
+<div class="c:gray">Talks from independently organized local events</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="pos:r fl:l z-i:10 Main-nav__category" data-popper-name="discover" data-popper-root="" role="presentation">
+<a aria-haspopup="" class="Main-nav__category__label Main-nav__item Main-nav__label f-w:700 t-t:u undec" data-popper-target="" href="https://www.ted.com/talks/jer_thorp_make_data_more_human#" onclick="return false" role="menuitem">Discover</a>
+<ul aria-hidden="" class="Main-nav/Popper__popup Main-nav__category__list popup popup--inverse popup--tailed popup--tailed--center popup--tailed--top sl" role="menu">
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="discover" data-ga-category="navigation.item" data-ga-label="/topics" href="https://www.ted.com/topics">
+<div class="f-w:700 m-b:.1">Topics</div>
+<div class="c:gray">Explore TED offerings by topic</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="discover" data-ga-category="navigation.item" data-ga-label="/read/ted-books" href="https://www.ted.com/read/ted-books">
+<div class="f-w:700 m-b:.1">TED Books</div>
+<div class="c:gray">Short books to feed your craving for ideas</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="discover" data-ga-category="navigation.item" data-ga-label="http://ideas.ted.com" href="http://ideas.ted.com/">
+<div class="f-w:700 m-b:.1">Ideas Blog</div>
+<div class="c:gray">Our daily coverage of the world of ideas</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="discover" data-ga-category="navigation.item" data-ga-label="/newsletter" href="https://www.ted.com/newsletter">
+<div class="f-w:700 m-b:.1">Newsletter</div>
+<div class="c:gray">Inspiration delivered straight to your inbox</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="pos:r fl:l z-i:10 Main-nav__category" data-popper-name="attend" data-popper-root="" role="presentation">
+<a aria-haspopup="" class="Main-nav__category__label Main-nav__item Main-nav__label f-w:700 t-t:u undec" data-popper-target="" href="https://www.ted.com/talks/jer_thorp_make_data_more_human#" onclick="return false" role="menuitem">Attend</a>
+<ul aria-hidden="" class="Main-nav/Popper__popup Main-nav__category__list popup popup--inverse popup--tailed popup--tailed--center popup--tailed--top sl" role="menu">
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="attend" data-ga-category="navigation.item" data-ga-label="/attend/conferences" href="https://www.ted.com/attend/conferences">
+<div class="f-w:700 m-b:.1">Conferences</div>
+<div class="c:gray">Take part in our events: TED, TEDGlobal and more</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="attend" data-ga-category="navigation.item" data-ga-label="/tedx/events" href="https://www.ted.com/tedx/events">
+<div class="f-w:700 m-b:.1">TEDx events</div>
+<div class="c:gray">Find and attend local, independently organized events</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="attend" data-ga-category="navigation.item" data-ga-label="/attend/ted-on-screen" href="https://www.ted.com/attend/ted-on-screen">
+<div class="f-w:700 m-b:.1">TED on screen</div>
+<div class="c:gray">Experience TED from home or in theaters</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="pos:r fl:l z-i:10 Main-nav__category" data-popper-name="participate" data-popper-root="" role="presentation">
+<a aria-haspopup="" class="Main-nav__category__label Main-nav__item Main-nav__label f-w:700 t-t:u undec" data-popper-target="" href="https://www.ted.com/talks/jer_thorp_make_data_more_human#" onclick="return false" role="menuitem">Participate</a>
+<ul aria-hidden="" class="Main-nav/Popper__popup Main-nav__category__list popup popup--inverse popup--tailed popup--tailed--center popup--tailed--top sl" role="menu">
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="participate" data-ga-category="navigation.item" data-ga-label="/participate/nominate" href="https://www.ted.com/participate/nominate">
+<div class="f-w:700 m-b:.1">Nominate</div>
+<div class="c:gray">Recommend speakers, TED Prize recipients, Fellows and more</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="participate" data-ga-category="navigation.item" data-ga-label="/participate/organize-a-local-tedx-event" href="https://www.ted.com/participate/organize-a-local-tedx-event">
+<div class="f-w:700 m-b:.1">Organize a local TEDx event</div>
+<div class="c:gray">Rules and resources to help you plan a local TEDx event</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="participate" data-ga-category="navigation.item" data-ga-label="/participate/translate" href="https://www.ted.com/participate/translate">
+<div class="f-w:700 m-b:.1">Translate</div>
+<div class="c:gray">Bring TED to the non-English speaking world</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="participate" data-ga-category="navigation.item" data-ga-label="/participate/ted-fellows-program" href="https://www.ted.com/participate/ted-fellows-program">
+<div class="f-w:700 m-b:.1">TED Fellows</div>
+<div class="c:gray">Join or support innovators from around the globe</div>
+</a>
+</li>
+</ul>
+</li>
+<li class="pos:r fl:l z-i:10 Main-nav__category" data-popper-name="about" data-popper-root="" role="presentation">
+<a aria-haspopup="" class="Main-nav__category__label Main-nav__item Main-nav__label f-w:700 t-t:u undec" data-popper-target="" href="https://www.ted.com/talks/jer_thorp_make_data_more_human#" onclick="return false" role="menuitem">About</a>
+<ul aria-hidden="" class="Main-nav/Popper__popup Main-nav__category__list popup popup--inverse popup--tailed popup--tailed--center popup--tailed--top sl" role="menu">
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="about" data-ga-category="navigation.item" data-ga-label="/about/our-organization" href="https://www.ted.com/about/our-organization">
+<div class="f-w:700 m-b:.1">Our organization</div>
+<div class="c:gray">Our mission, history, team, and more</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="about" data-ga-category="navigation.item" data-ga-label="/about/conferences" href="https://www.ted.com/about/conferences">
+<div class="f-w:700 m-b:.1">Conferences</div>
+<div class="c:gray">TED Conferences, past, present, and future</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="about" data-ga-category="navigation.item" data-ga-label="/about/programs-initiatives" href="https://www.ted.com/about/programs-initiatives">
+<div class="f-w:700 m-b:.1">Programs &amp; Initiatives</div>
+<div class="c:gray">Details about TED's world-changing initiatives</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="about" data-ga-category="navigation.item" data-ga-label="/about/partner-with-ted" href="https://www.ted.com/about/partner-with-ted">
+<div class="f-w:700 m-b:.1">Partner with TED</div>
+<div class="c:gray">Learn how you can partner with us</div>
+</a>
+</li>
+<li role="menuitem">
+<a class="d:b hover/bg:gray-ll Main-nav__fs-1 p-x:4 p-y:.8 undec ga-link" data-ga-action="about" data-ga-category="navigation.item" data-ga-label="http://blog.ted.com" href="http://blog.ted.com/">
+<div class="f-w:700 m-b:.1">TED Blog</div>
+<div class="c:gray">Updates from TED and highlights from our global community</div>
+</a>
+</li>
+</ul>
+</li>
+</ul>
+<div class="Main-nav__divider nav__divider fl:l show-lg"></div>
+<div class="loggedin-only fl:l pos:r z-i:10" data-popper-name="account" data-popper-root=""><a class="Main-nav__item Main-nav__account-button" data-popper-target="" href="https://www.ted.com/dashboard" id="main-nav-account-button" onclick="return false" role="button" title="Your account">
+<div class="Main-nav__account-button__avatar">
+<div class="Main-nav__account-button__badge"></div>
+</div>
+</a>
+<div aria-hidden="" class="Main-nav/Popper__popup Main-nav__category__list Main-nav__category__list--account popup popup--inverse popup--tailed popup--tailed--center popup--tailed--top" id="main-nav-account-menu" role="menu"><div class="
+    b-b
+    b:black.9
+    p-x:4
+    p-y:.8
+  ">
+  <div class="Main-nav__fs-6 f-w:700">Hi, </div>
+</div>
+
+<ul class="
+    b-b
+    b:black.9
+    sl
+  ">
+    <li>
+      <a class="
+          Main-nav__fs-1
+          hover/bg:gray-ll
+          f-w:700
+          d:b
+          p-x:4
+          p-y:.7
+          undec
+          ga-link
+        " href="https://www.ted.com/dashboard/list" data-ga-category="navigation.item" data-ga-action="account" data-ga-label="/dashboard/list">Your list</a>
+    </li>
+    <li>
+      <a class="
+          Main-nav__fs-1
+          hover/bg:gray-ll
+          f-w:700
+          d:b
+          p-x:4
+          p-y:.7
+          undec
+          ga-link
+        " href="https://www.ted.com/dashboard/favorites" data-ga-category="navigation.item" data-ga-action="account" data-ga-label="/dashboard/favorites">Likes</a>
+    </li>
+    <li>
+      <a class="
+          Main-nav__fs-1
+          hover/bg:gray-ll
+          f-w:700
+          d:b
+          p-x:4
+          p-y:.7
+          undec
+          ga-link
+        " href="https://www.ted.com/dashboard/history" data-ga-category="navigation.item" data-ga-action="account" data-ga-label="/dashboard/history">Watch history</a>
+    </li>
+    <li>
+      <a class="
+          Main-nav__fs-1
+          hover/bg:gray-ll
+          f-w:700
+          d:b
+          p-x:4
+          p-y:.7
+          undec
+          ga-link
+        " href="https://www.ted.com/settings/account" data-ga-category="navigation.item" data-ga-action="account" data-ga-label="https://www.ted.com/settings/account">Account settings</a>
+    </li>
+    <li>
+      <a class="
+          Main-nav__fs-1
+          hover/bg:gray-ll
+          f-w:700
+          d:b
+          p-x:4
+          p-y:.7
+          undec
+          ga-link
+        " href="https://www.ted.com/profile" data-ga-category="navigation.item" data-ga-action="account" data-ga-label="/profile">Your profile</a>
+    </li>
+</ul>
+
+<div>
+  <a class="
+      hover/bg:gray-ll
+      d:b
+      f-w:700
+      p-x:4
+      p-y:2
+      Main-nav__fs-1
+      undec
+      ga-link
+    " href="https://auth.ted.com/session/logout?referer=https://www.ted.com/session/logout" data-ga-category="navigation.item" data-ga-action="account" data-ga-label="https://auth.ted.com/session/logout?referer=https://www.ted.com/session/logout">Log out</a>
+</div>
+</div></div>
+<a class="Main-nav__item Main-nav__label auth-login f-w:700 fl:l loggedout-only t-t:u undec" href="https://www.ted.com/session/new">Log in</a>
+<div class="Main-nav__divider fl:l show-lg"></div>
+<div class="fl:l show-lg">
+<a class="Main-nav__item" href="https://www.ted.com/search" id="main-nav-search" role="button">
+<svg baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 512 512" class="Main-nav__icon Main-nav__icon--search"><title>Search</title><path d="M221.414 12.31C105.96 12.31 12 106.164 12 221.475c0 115.34 93.96 209.202 209.452 209.202 41.684 0 80.52-12.4 113.205-33.512l89.652 89.576c17.304 17.267 45.413 17.267 62.697 0 17.342-17.322 17.304-45.374 0-62.677l-89.634-89.5c21.13-32.646 33.512-71.406 33.512-113.09-.02-115.31-93.92-209.163-209.47-209.163zm167.5 209.165c0 92.267-75.136 167.27-167.462 167.27-92.344 0-167.462-75.04-167.462-167.27 0-92.22 75.118-167.25 167.462-167.193 92.326 0 167.424 74.973 167.463 167.193z"></path></svg>
+</a>
+</div>
+</div>
+<form action="https://www.ted.com/search" aria-hidden="true" class="Main-nav__search pos:a right:0" id="main-nav-search-form" role="search">
+<div class="Main-nav__search__content left:0 pos:a">
+<div class="Main-nav__divider fl:l"></div>
+<label>
+<span class="screen-reader-text">
+Search:
+</span>
+<input aria-label="Search" autocorrect="off" class="Main-nav__fs-6 Main-nav__search__input" name="q" placeholder="Type to search" tabindex="-1" title="Press Enter to begin search">
+</label>
+<a aria-label="Close" class="Main-nav__search__close fl:r" href="https://www.ted.com/talks/jer_thorp_make_data_more_human#" role="button" tabindex="-1">
+<svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0, 0, 30, 30" class="Main-nav__icon"><title>Cancel search</title><path d="M24.5 6.718L6.936 24.282 24.5 6.718zm-18 0l17.564 17.564L6.5 6.718z" stroke="#414141" stroke-width="2" stroke-linecap="square" fill="none"></path></svg>
+</a>
+</div>
+</form>
+</nav>
+<div id="main-nav-slideouts"><div></div><div></div></div>
+<script>g("mainNav.init",{"menuItems":[{"label":"Watch","name":"watch","items":[{"url":"/talks","label":"TED Talks","info":"Browse the library of TED talks and speakers"},{"url":"/recommends?exploreCTASource=main-nav.item","label":"TED Recommends","info":"Get TED Talks picked just for you"},{"url":"/playlists","label":"Playlists","info":"100+ collections of TED Talks, for curious minds"},{"url":"/series","label":"TED Series","info":"Go deeper into fascinating topics with original video series from TED."},{"url":"/watch/ted-ed","label":"TED-Ed videos","info":"Watch, share and create lessons with TED-Ed"},{"url":"/watch/tedx-talks","label":"TEDx Talks","info":"Talks from independently organized local events"}]},{"label":"Discover","name":"discover","items":[{"url":"/topics","label":"Topics","info":"Explore TED offerings by topic"},{"url":"/read/ted-books","drilldown":true,"label":"TED Books","info":"Short books to feed your craving for ideas"},{"url":"http://ideas.ted.com","label":"Ideas Blog","info":"Our daily coverage of the world of ideas","external":true},{"url":"/newsletter","label":"Newsletter","info":"Inspiration delivered straight to your inbox"}]},{"label":"Attend","name":"attend","items":[{"url":"/attend/conferences","drilldown":true,"label":"Conferences","info":"Take part in our events: TED, TEDGlobal and more"},{"url":"/tedx/events","label":"TEDx events","info":"Find and attend local, independently organized events"},{"url":"/attend/ted-on-screen","label":"TED on screen","info":"Experience TED from home or in theaters"}]},{"label":"Participate","name":"participate","items":[{"url":"/participate/nominate","label":"Nominate","info":"Recommend speakers, TED Prize recipients, Fellows and more"},{"url":"/participate/organize-a-local-tedx-event","drilldown":true,"label":"Organize a local TEDx event","info":"Rules and resources to help you plan a local TEDx event"},{"url":"/participate/translate","drilldown":true,"label":"Translate","info":"Bring TED to the non-English speaking world"},{"url":"/participate/ted-fellows-program","label":"TED Fellows","info":"Join or support innovators from around the globe"}]},{"label":"About","name":"about","items":[{"url":"/about/our-organization","drilldown":true,"label":"Our organization","info":"Our mission, history, team, and more"},{"url":"/about/conferences","drilldown":true,"label":"Conferences","info":"TED Conferences, past, present, and future"},{"url":"/about/programs-initiatives","label":"Programs & Initiatives","info":"Details about TED's world-changing initiatives"},{"url":"/about/partner-with-ted","drilldown":true,"label":"Partner with TED","info":"Learn how you can partner with us"},{"url":"http://blog.ted.com","label":"TED Blog","info":"Updates from TED and highlights from our global community","external":true}]}]})</script><div class="main talks-main" role="main">
+<script>
+		__ga('set', 'dimension2', '1400');
+	</script>
+
+	<div itemscope="" itemtype="http://schema.org/VideoObject">
+		<link href="https://www.ted.com/talks/jer_thorp_make_data_more_human" itemprop="url">
+<meta content="Make data more human" itemprop="name">
+<meta content="Jer Thorp creates beautiful data visualizations to put abstract data into a human context. At TEDxVancouver, he shares his moving projects, from graphing an entire year&#39;s news cycle, to mapping the way people share articles across the internet." itemprop="description">
+<meta content="PT17M22S" itemprop="duration">
+<meta content="2012-03-24T14:01:48+00:00" itemprop="uploadDate">
+<meta content="256583" itemprop="interactionCount">
+<link content="https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/a4f077eed3635ebc7e54065bacc739de19626a39_800x600.jpg?quality=95&amp;w=480" itemprop="thumbnailUrl">
+<span itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+<link href="https://www.ted.com/speakers/jer_thorp" itemprop="url">
+<meta content="Jer Thorp" itemprop="name">
+<link href="https://pe.tedcdn.com/images/ted/3a86568fd52bac232f59bbbbbae9feec67a51039_254x191.jpg" itemprop="image">
+</span>
+<link href="https://embed.ted.com/talks/jer_thorp_make_data_more_human" itemprop="embedURL">
+<meta content="Flash HTML5" itemprop="playerType">
+<meta content="640" itemprop="width">
+<meta content="360" itemprop="height">
+<link href="https://creativecommons.org/licenses/by-nc-nd/4.0/" itemprop="license">
+
+
+		<div data-talk-page=""><div style="min-height: 100%;"><div style="background-color: rgb(233, 233, 233);"><div class="m-x:a pos:r p-t:5@xxl" style="max-width: 106.25rem;"><div class="Grid d:f@md" style="min-height: 100vh;"><div class=" Grid__cell bg:white w:full w:2of3@md flx-g:1 "><div class="pos:r"><div class=" pos:r o:h "><div><div class=" pos:c z-i:1 j-c:c a-i:c m-x:a "><div class=" d:n d:b@lg m-w:xl pos:r m-x:a z-i:5 "><div class=" pos:a top:4 right:4 right:4@md z-i:4 " style="opacity: 1;"><div class=" d:f flx-d:c w:9 "><div><div class=" d:b m-b:1 m-x:a t-a:c "><button class=" c:white f:.9 sb "><div class=" c:white bg:gray-dd.2 b-r:3 d:i-b v-a:m w:6 h:6 t-a:c "><span class="SVGInline  d:i-b o:v w:full h:full p:.3 t-a:c "><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline  d:i-b o:v w:full h:full p:.3 t-a:c " style="width: 100%;height: 100%;" viewBox="0 0 24 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Share</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-193.000000, -20.000000)" fill="currentColor">
+            <g transform="translate(20.000000, 20.000000)">
+                <path d="M196.011452,6.74747945 L189.582881,0.318908023 C189.432211,0.16823838 189.231318,0.0803477551 189.01787,0.0803477551 C188.578417,0.0803477551 188.214298,0.444466059 188.214298,0.883919184 L188.214298,4.0982049 L185.401798,4.0982049 C181.283495,4.0982049 176.160727,4.82644151 174.41547,9.15819374 C173.888126,10.4891089 173.750013,11.9330263 173.750013,13.3392763 C173.750013,15.0970888 174.628919,17.3948009 175.3446,19.0019437 C175.482713,19.2907272 175.620827,19.6925129 175.809164,19.9561848 C175.897055,20.0817428 175.984946,20.1696335 176.160727,20.1696335 C176.411843,20.1696335 176.562513,19.9687406 176.562513,19.7301803 C176.562513,19.5292875 176.512289,19.303283 176.499733,19.1023902 C176.462066,18.5876022 176.436954,18.0728143 176.436954,17.5580263 C176.436954,11.568908 179.990247,10.5267763 185.401798,10.5267763 L188.214298,10.5267763 L188.214298,13.741062 C188.214298,14.1805152 188.578417,14.5446335 189.01787,14.5446335 C189.231318,14.5446335 189.432211,14.4567428 189.582881,14.3060732 L196.011452,7.87750177 C196.162122,7.72683213 196.250013,7.52593927 196.250013,7.31249061 C196.250013,7.09904195 196.162122,6.89814909 196.011452,6.74747945 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg></span></div><div class=" w:full d:n d:i-b@xxs c:white m-t:.4 ">Share</div></button></div><div class=" m-b:1 m-x:a t-a:c "><button class=" c:white f:.9 sb "><div class="
+                        b-r:3
+                        d:i-b
+                        v-a:m
+                        w:6
+                        h:6
+                        t-a:c
+                       c:white bg:gray-dd.2"><span class="SVGInline  d:i-b o:v w:full h:full p:.3 t-a:c "><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline  d:i-b o:v w:full h:full p:.3 t-a:c " style="width: 100%;height: 100%;" viewBox="0 0 23 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Add to list</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-35.000000, -24.000000)" fill="currentColor">
+            <g transform="translate(20.000000, 20.000000)">
+                <path d="M15,14 L25,14 L25,12 L15,12 L15,14 Z M34,13 L34,9 L32,9 L32,13 L28,13 L28,15 L32,15 L32,19 L34,19 L34,15 L38,15 L38,13 L34,13 Z M15,6 L29,6 L29,4 L15,4 L15,6 Z M15,10 L29,10 L29,8 L15,8 L15,10 Z" id="add-to-list"></path>
+            </g>
+        </g>
+    </g>
+</svg></span></div><div class=" w:full d:n d:i-b@xxs c:white m-t:.4 ">Add to list</div></button></div><div class=" m-b:1 m-x:a t-a:c "><button class=" c:white f:.9 sb "><div class="
+                        b-r:3
+                        d:i-b
+                        v-a:m
+                        w:6
+                        h:6
+                        t-a:c
+                       c:white bg:gray-dd.2"><span class="SVGInline  d:i-b o:v w:full h:full p:.3 t-a:c "><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline  d:i-b o:v w:full h:full p:.3 t-a:c " style="width: 100%;height: 100%;" width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Like</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-137.000000, -22.000000)" stroke="currentColor" stroke-width="2">
+            <g transform="translate(20.000000, 20.000000)">
+                <path d="M127.723363,17.6614107 C127.72642,17.6642558 127.729438,17.6671665 127.732414,17.6701425 L127.723362,17.6614098 L127.723363,17.6614107 Z M127.500091,17.4460029 L120.987464,11.1627712 C119.9584,10.2607701 118.833333,8.63092992 118.833333,7.04911244 C118.833333,4.44618761 120.311009,3 122.990333,3 C124.203571,3 125.572785,3.83282073 126.797421,5.0419558 L127.50001,5.73565093 L128.202599,5.0419558 C129.427236,3.83282073 130.796449,3 132.009687,3 C134.689012,3 136.166687,4.44618761 136.166687,7.04911244 C136.166687,7.96848704 135.776824,8.94115399 135.11079,9.89202122 C134.877457,10.2251408 134.626625,10.5317258 134.373026,10.8068958 C134.220251,10.9726655 134.101784,11.0900692 133.988967,11.1969215 L127.500091,17.4460029 Z M127.287913,17.6503398 L127.281027,17.6569719 C127.283261,17.6547272 127.285557,17.6525161 127.287913,17.65034 L127.287913,17.6503398 Z M127.723362,17.6614098 L127.500091,17.4460029 L127.287913,17.6503398 C127.33981,17.6024085 127.420662,17.5714459 127.50001,17.5714459 C127.579155,17.5714459 127.659796,17.6022497 127.723363,17.6614107 L127.723362,17.6614098 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg></span></div><div class=" w:full d:n d:i-b@xxs c:white m-t:.4 ">Like</div></button></div><div class=" m-b:1 m-x:a t-a:c "><button class=" c:white f:.9 sb "><div class="
+                            b-r:3
+                            d:i-b
+                            v-a:m
+                            w:6
+                            h:6
+                            t-a:c
+                           c:white bg:gray-dd.2"><span class="SVGInline  d:i-b o:v w:full h:full p:.5 t-a:c "><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline  d:i-b o:v w:full h:full p:.5 t-a:c " style="width: 100%;height: 100%;" width="366px" height="395px" viewBox="0 0 366 395" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rate</title>
+    <g fill-rule="nonzero">
+        <path fill="currentColor" d="M0,225.714286 L84.4615385,225.714286 L84.4615385,395 L0,395 L0,225.714286 Z M140.769231,0 L225.230769,0 L225.230769,395 L140.769231,395 L140.769231,0 Z M281.538462,112.857143 L366,112.857143 L366,395 L281.538462,395 L281.538462,112.857143 Z"></path>
+    </g>
+</svg></span></div><div class=" w:full d:n d:i-b@xxs c:white m-t:.4 ">Rate</div></button></div></div></div></div></div><div id="video-container" style="position: relative;"><div style="display: block; padding-top: 56.25%;"></div><div style="position: absolute; bottom: 0px; left: 0px; top: 0px; right: 0px;"><div class="sticky-outer-wrapper  h:full pos:r d:f j-c:c a-i:c "><div class="sticky-inner-wrapper" style="position: relative; top: 0px;"><div class="h:full pos:r"><div class="h:full"><div class=" o:h bg:black " style="position: relative;"><div style="display: block; padding-top: 56.25%;"></div><div style="position: absolute; bottom: 0px; left: 0px; top: 0px; right: 0px;"><div id="ted-player" class=" h:full w:full pos:r d:f a-i:c j-c:c bg:black "><div class="pos:a pos:c"><div class=" pos:c pos:a bg:black " style="background-image: url(&quot;https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/a4f077eed3635ebc7e54065bacc739de19626a39_800x600.jpg?op=%5E&amp;c=1280%2C720&amp;gravity=t&amp;u%5Br%5D=2&amp;u%5Bs%5D=0.5&amp;u%5Ba%5D=0.8&amp;u%5Bt%5D=0.03&amp;quality=82&amp;w=1280&amp;h=720&quot;), linear-gradient(to top, rgba(0, 0, 0, 0.65) 8%, rgba(0, 0, 0, 0) 72%); background-repeat: no-repeat; background-size: cover;"></div></div><div class="d:b w:full h:full"><div class="h:full w:full"><div class="h:full w:full"><video playsinline="playsinline" class="h:full w:full" id="ted-player-6282" src="blob:https://www.ted.com/9438d4ad-006f-4f4a-a3d8-b873da6c9bec" crossorigin="anonymous"></video><div class="h:full w:full" style="display: none;"><div style="position: absolute;"><div style="display: none;"><video title="Advertisement" webkit-playsinline="true" playsinline="true" style="background-color: rgb(0, 0, 0); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"></video><div style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"></div></div><div style="display: none;"><video title="Advertisement" webkit-playsinline="true" playsinline="true" style="background-color: rgb(0, 0, 0); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"></video><div style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"></div></div><iframe src="./Jer Thorp_ Make data more human _ TED Talk_files/bridge3.260.1_en.html" allowfullscreen="" allow="autoplay" style="border: 0px; opacity: 0; margin: 0px; padding: 0px; position: relative;"></iframe></div></div></div></div></div><div class=" pos:a pos:c "><button aria-label="Play Video" class=" sb pos:a pos:c w:full z-i:3 hover/grow " style="outline: none; opacity: 1;"><div class=" d:i-b w:full "><div class=" d:i-b o:v vhs-pop vhs-duration-3 " style="line-height: 0;"><span class="SVGInline  o:v d:b w:10 h:10 "><svg class="SVGInline-svg -svg o:v-svg d:b-svg w:10-svg h:10-svg -svg" style="width: 100%;height: 100%;" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg"><title>Play</title><g fill="none" fill-rule="evenodd"><circle fill="#FFF" cx="36" cy="36" r="36"></circle><path fill="#111" d="M28 47V25l22 11z"></path></g></svg></span><div class="play-pulse"></div></div></div></button><div style="opacity: 1;"><div class=" pos:a w:full bottom:0 " style="pointer-events: all;"><div class=" bottom:0 h:full p-y:5 p-y:9@md pos:a w:full z-i:0 " style="background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)); pointer-events: none;"></div><div class=" p-b:.5 p-x:.8 pos:r z-i:5 "><div class="z-i:0 d:f j-c:s-a a-i:c l-h:d h:full"><div class="m-r:1"><button title="play video" aria-controls="video1" class=" sb p:1 hover/bg:white.7 b-r:.1 cur:p "><span class="SVGInline  d:b w:2 h:2 c:white "><svg class="SVGInline-svg -svg d:b-svg w:2-svg h:2-svg c:white-svg -svg" fill="currentColor" id="plyr-play" viewBox="0 0 18 18"><path d="M15.562 8.1L3.87.225C3.052-.337 2 .225 2 1.125v15.75c0 .9 1.052 1.462 1.87.9L15.563 9.9c.584-.45.584-1.35 0-1.8z"></path></svg></span></button></div><div class="flx-g:1"><div style="user-select: none;"><div class=" pos:r "><div class=" video-progress-bar video-progress-bar--horizontal "><div class="video-progress-bar__fill" style="width: 0%;"></div><input class="video-progress-bar__input" title="Video seek control" type="range" min="0" max="1043" step="0.1" value="0"></div></div></div></div><div><span class=" c:white f:.9 m-l:4 m-r:1 ">17:23</span></div><div class="z-i:0 pos:r top:0"><button title="mute volume" aria-controls="video1" class=" sb p:1 hover/bg:white.7 b-r:.1 cur:p "><span class="SVGInline  d:b w:2 h:2 c:white "><svg class="SVGInline-svg -svg d:b-svg w:2-svg h:2-svg c:white-svg -svg" fill="currentColor" id="plyr-volume" viewBox="0 0 18 18"><path d="M15.6 3.3c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4C15.4 5.9 16 7.4 16 9c0 1.6-.6 3.1-1.8 4.3-.4.4-.4 1 0 1.4.2.2.5.3.7.3.3 0 .5-.1.7-.3C17.1 13.2 18 11.2 18 9s-.9-4.2-2.4-5.7z"></path><path d="M11.282 5.282a.909.909 0 0 0 0 1.316c.735.735.995 1.458.995 2.402 0 .936-.425 1.917-.995 2.487a.909.909 0 0 0 0 1.316c.145.145.636.262 1.018.156a.725.725 0 0 0 .298-.156C13.773 11.733 14.13 10.16 14.13 9c0-.17-.002-.34-.011-.51-.053-.992-.319-2.005-1.522-3.208a.909.909 0 0 0-1.316 0zM3.786 6.008H.714C.286 6.008 0 6.31 0 6.76v4.512c0 .452.286.752.714.752h3.072l4.071 3.858c.5.3 1.143 0 1.143-.602V2.752c0-.601-.643-.977-1.143-.601L3.786 6.008z"></path></svg></span></button><div class="pos:r m-x:1" style="pointer-events: none;"></div></div><div class="z-i:0 pos:r bottom:0"><button title="subtitle controls" aria-controls="video1" class=" sb p:1 hover/bg:white.7 b-r:.1 cur:p "><span class="SVGInline  d:b w:2 h:2 c:white "><svg class="SVGInline-svg -svg d:b-svg w:2-svg h:2-svg c:white-svg -svg" fill="currentColor" viewBox="0 0 26 23" xmlns="http://www.w3.org/2000/svg"><title>Subtitles</title><path d="M0 0h26v22.677L21.544 17.8H0V0zm6.276 11.602a2.373 2.373 0 1 0 0-4.746 2.373 2.373 0 0 0 0 4.746zm6.592 0a2.373 2.373 0 1 0 0-4.746 2.373 2.373 0 0 0 0 4.746zm6.592 0a2.373 2.373 0 1 0 0-4.746 2.373 2.373 0 0 0 0 4.746z" fill="#FFF" fill-rule="evenodd"></path></svg></span></button><span style="pointer-events: none;"></span></div><div class="z-i:0 pos:r bottom:0"><button title="More Options" aria-controls="video1" class=" sb p:1 hover/bg:white.7 b-r:.1 cur:p "><span class="SVGInline  d:b w:2 h:2 c:white "><!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+<svg class="SVGInline-svg -svg d:b-svg w:2-svg h:2-svg c:white-svg -svg" fill="currentColor" width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 42 (36780) - http://www.bohemiancoding.com/sketch -->
+    <title>F83FDBED-607D-4FA2-ACE7-95225AB2AF87</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Player-(desktop)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Playback-hover" transform="translate(-891.000000, -609.000000)" fill="#FFFFFF">
+            <g id="Controls" transform="translate(18.000000, 393.000000)">
+                <g id="Settings" transform="translate(862.000000, 205.000000)">
+                    <path d="M12.0791137,21.6949304 C12.406739,21.7334745 12.7729086,21.7527466 13.1583502,21.7720187 C13.4281593,21.7912908 13.6594243,21.9647395 13.7365126,22.2345486 C13.8714171,22.6585344 14.0255938,23.063248 14.2375867,23.4294176 C14.3724912,23.6606825 14.3339471,23.9497637 14.1604983,24.1617566 C13.9099613,24.4508378 13.6594243,24.739919 13.4667035,24.9904561 C13.2547106,25.2409931 13.2739827,25.6264347 13.5052476,25.8576997 L14.6423003,26.9947524 C14.8735653,27.2260173 15.2590069,27.2452894 15.5095439,27.0332965 C15.760081,26.8213037 16.0298901,26.5900387 16.3382434,26.3395017 C16.5502363,26.1660529 16.8393175,26.1275088 17.0705824,26.2624133 C17.456024,26.4551341 17.8607377,26.6285829 18.2654514,26.7634874 C18.5159884,26.8405757 18.7087092,27.0718407 18.7279813,27.3416498 C18.7472534,27.7270914 18.7857976,28.093261 18.8050696,28.4208863 C18.8436138,28.7485117 19.1134229,28.9990487 19.4410483,28.9990487 L21.059903,28.9990487 C21.3875284,28.9990487 21.6766096,28.7485117 21.6958816,28.4208863 C21.7344258,28.093261 21.7536979,27.7270914 21.77297,27.3416498 C21.792242,27.0718407 21.9656908,26.8405757 22.2354999,26.7634874 C22.6594857,26.6285829 23.0641993,26.4744062 23.4303689,26.2624133 C23.6616338,26.1275088 23.950715,26.1660529 24.1627079,26.3395017 C24.4517891,26.5900387 24.7408703,26.8405757 24.9914073,27.0332965 C25.2419444,27.2452894 25.627386,27.2260173 25.8586509,26.9947524 L26.9957037,25.8576997 C27.2269686,25.6264347 27.2462407,25.2409931 27.0342478,24.9904561 C26.822255,24.739919 26.59099,24.4701099 26.3404529,24.1617566 C26.1670042,23.9497637 26.1284601,23.6606825 26.2633646,23.4294176 C26.4560854,23.043976 26.6295341,22.6392623 26.7644387,22.2345486 C26.841527,21.9840116 27.072792,21.7912908 27.3426011,21.7720187 C27.7280427,21.7527466 28.0942122,21.7142024 28.4218376,21.6949304 C28.749463,21.6563862 29,21.3865771 29,21.0589517 L29,19.440097 C29,19.1124716 28.749463,18.8233904 28.4218376,18.8041184 C28.0942122,18.7655742 27.7280427,18.7463021 27.3426011,18.72703 C27.072792,18.707758 26.841527,18.5343092 26.7644387,18.2645001 C26.6295341,17.8405143 26.4753575,17.4358007 26.2633646,17.0696311 C26.1284601,16.8383662 26.1670042,16.549285 26.3404529,16.3372921 C26.59099,16.0482109 26.841527,15.7591297 27.0342478,15.5085927 C27.2462407,15.2580556 27.2269686,14.872614 26.9957037,14.6413491 L25.8586509,13.5042963 C25.627386,13.2730314 25.2419444,13.2537593 24.9914073,13.4657522 C24.7408703,13.677745 24.4710612,13.90901 24.1627079,14.1595471 C23.950715,14.3329958 23.6616338,14.3715399 23.4303689,14.2366354 C23.0449273,14.0439146 22.6402136,13.8704659 22.2354999,13.7355613 C21.9849628,13.658473 21.792242,13.427208 21.77297,13.1573989 C21.7536979,12.7719573 21.7151537,12.4057878 21.6958816,12.0781624 C21.6573375,11.750537 21.3875284,11.5 21.059903,11.5 L19.4410483,11.5 C19.1134229,11.5 18.8243417,11.750537 18.8050696,12.0781624 C18.7665255,12.4057878 18.7472534,12.7719573 18.7279813,13.1573989 C18.7087092,13.427208 18.5352605,13.658473 18.2654514,13.7355613 C17.8414656,13.8704659 17.436752,14.0246425 17.0705824,14.2366354 C16.8393175,14.3715399 16.5502363,14.3329958 16.3382434,14.1595471 C16.0491622,13.90901 15.760081,13.658473 15.5095439,13.4657522 C15.2590069,13.2537593 14.8735653,13.2730314 14.6423003,13.5042963 L13.5052476,14.6413491 C13.2739827,14.872614 13.2547106,15.2580556 13.4667035,15.5085927 C13.6786963,15.7591297 13.9099613,16.0289388 14.1604983,16.3372921 C14.3339471,16.549285 14.3724912,16.8383662 14.2375867,17.0696311 C14.0448659,17.4550727 13.8714171,17.8597864 13.7365126,18.2645001 C13.6594243,18.5150372 13.4281593,18.707758 13.1583502,18.72703 C12.7729086,18.7463021 12.406739,18.7848463 12.0791137,18.8041184 C11.7514883,18.8426625 11.5009513,19.1124716 11.5009513,19.440097 L11.5009513,21.0589517 C11.4816792,21.3865771 11.7322162,21.6756583 12.0791137,21.6949304 L12.0791137,21.6949304 Z M20.2504756,15.8747622 C22.6787577,15.8747622 24.6252378,17.8405143 24.6252378,20.2495244 C24.6252378,22.6778064 22.6594857,24.6242865 20.2504756,24.6242865 C17.8414656,24.6242865 15.8757135,22.6778064 15.8757135,20.2495244 C15.8757135,17.8212423 17.8221936,15.8747622 20.2504756,15.8747622 L20.2504756,15.8747622 Z"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg></span></button><span style="pointer-events: none;"></span></div><div><button title="Enter Fullscreen" aria-controls="video1" class=" sb p:1 hover/bg:white.7 b-r:.1 cur:p "><span class="SVGInline  d:b w:2 h:2 c:white "><svg class="SVGInline-svg -svg d:b-svg w:2-svg h:2-svg c:white-svg -svg" fill="currentColor" id="plyr-enter-fullscreen" viewBox="0 0 18 18"><path d="M10 3h3.6l-4 4L11 8.4l4-4V8h2V1h-7zM7 9.6l-4 4V10H1v7h7v-2H4.4l4-4z"></path></svg></span></button></div></div></div></div></div></div></div></div></div></div><div class=""></div></div></div></div></div></div><div class="pos:r 
+                      c:white
+                      j-c:c
+                      m-x:a
+                      t-a:c@md
+                      z-i:1
+                    "><div class="bottom:8 pos:a@md w:full" style="pointer-events: none;"><div class="d:f flx-d:c pos:r a-i:f-s"><div style="opacity: 1;"><div class="d:i-b@xl p:1 t-a:l d:n d:i-b@lg p-x:4"><div class="pos:r z-i:1"><div class=" m-b:.5 d:f f:1 a-i:c "><div>Jer Thorp</div><div class="m-x:.3"> | </div><div>TEDxVancouver</div></div><div><h1 class="f-w:900 l-h:t m-b:0 p-x:0 z-i:1 f:5 f:6@xl l-s:t">Make data more human</h1></div><div class="d:n@md"><div class=" d:i-b f-w:700 f:.9 f:1@xxl "><span>256,583<span class="f-w:400"> views</span><div class="d:i-b f:.8 l-h:n m-x:.5 f-w:300"> • </div></span><span>17:22</span></div></div></div></div></div></div></div></div></div><span style="font-size: 0px;"></span></div></div></div><div id="content"><div class="w:full o:h"><div class="ReactCollapse--collapse" style="overflow: hidden; height: 0px;"><div class="ReactCollapse--content"><div class=" bg:gray-l.4 c:gray-d c:gray-dd@md f:.9 p:.8 p:1@md p-b:.9@md t-a:c "></div></div></div><div><div class=" bg:gray-ll bg:white@md d:n@lg "><div class="p-x:2 p-t:1"><div class=" a-i:c d:f "><div class="w:1of2"><span><span class="f-w:700 d:b">256,583</span><span class="f:.8 d:b">Views</span></span></div><div class="w:1of2"><ul class=" sl d:f j-c:f-e "><li class=" d:b w:1of5 m-w:5 "><div><button class="sb"><span class="SVGInline  d:b w:4 h:2 o:v m-b:.2 "><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline  d:b w:4 h:2 o:v m-b:.2 " style="width: 100%;height: 100%;" viewBox="0 0 23 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Add to list</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-35.000000, -24.000000)" fill="currentColor">
+            <g transform="translate(20.000000, 20.000000)">
+                <path d="M15,14 L25,14 L25,12 L15,12 L15,14 Z M34,13 L34,9 L32,9 L32,13 L28,13 L28,15 L32,15 L32,19 L34,19 L34,15 L38,15 L38,13 L34,13 Z M15,6 L29,6 L29,4 L15,4 L15,6 Z M15,10 L29,10 L29,8 L15,8 L15,10 Z" id="add-to-list"></path>
+            </g>
+        </g>
+    </g>
+</svg></span><span class=" f:.8 d:b t-t:c ">add</span></button></div></li><li class=" d:f w:1of5 m-w:5 m-l:2 "><div><button class="sb"><span class="SVGInline  d:b w:4 h:2 o:v m-b:.2 "><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline  d:b w:4 h:2 o:v m-b:.2 " style="width: 100%;height: 100%;" width="366px" height="395px" viewBox="0 0 366 395" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rate</title>
+    <g fill-rule="nonzero">
+        <path fill="currentColor" d="M0,225.714286 L84.4615385,225.714286 L84.4615385,395 L0,395 L0,225.714286 Z M140.769231,0 L225.230769,0 L225.230769,395 L140.769231,395 L140.769231,0 Z M281.538462,112.857143 L366,112.857143 L366,395 L281.538462,395 L281.538462,112.857143 Z"></path>
+    </g>
+</svg></span><span class=" f:.8 d:b t-t:c ">Rate</span></button></div></li><li class=" d:b w:1of5 m-w:5 m-l:2 "><div><button class="sb"><span class="SVGInline  d:b w:4 h:2 o:v m-b:.2 "><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline  d:b w:4 h:2 o:v m-b:.2 " style="width: 100%;height: 100%;" width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Like</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-137.000000, -22.000000)" stroke="currentColor" stroke-width="2">
+            <g transform="translate(20.000000, 20.000000)">
+                <path d="M127.723363,17.6614107 C127.72642,17.6642558 127.729438,17.6671665 127.732414,17.6701425 L127.723362,17.6614098 L127.723363,17.6614107 Z M127.500091,17.4460029 L120.987464,11.1627712 C119.9584,10.2607701 118.833333,8.63092992 118.833333,7.04911244 C118.833333,4.44618761 120.311009,3 122.990333,3 C124.203571,3 125.572785,3.83282073 126.797421,5.0419558 L127.50001,5.73565093 L128.202599,5.0419558 C129.427236,3.83282073 130.796449,3 132.009687,3 C134.689012,3 136.166687,4.44618761 136.166687,7.04911244 C136.166687,7.96848704 135.776824,8.94115399 135.11079,9.89202122 C134.877457,10.2251408 134.626625,10.5317258 134.373026,10.8068958 C134.220251,10.9726655 134.101784,11.0900692 133.988967,11.1969215 L127.500091,17.4460029 Z M127.287913,17.6503398 L127.281027,17.6569719 C127.283261,17.6547272 127.285557,17.6525161 127.287913,17.65034 L127.287913,17.6503398 Z M127.723362,17.6614098 L127.500091,17.4460029 L127.287913,17.6503398 C127.33981,17.6024085 127.420662,17.5714459 127.50001,17.5714459 C127.579155,17.5714459 127.659796,17.6022497 127.723363,17.6614107 L127.723362,17.6614098 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg></span><span class=" f:.8 d:b t-t:c ">like</span></button></div></li><li class=" d:b w:1of5 m-w:5 m-l:2 "><div><button class="sb"><span class="SVGInline  d:b w:4 h:2 o:v m-b:.2 "><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline  d:b w:4 h:2 o:v m-b:.2 " style="width: 100%;height: 100%;" viewBox="0 0 24 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+    <title>Share</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-193.000000, -20.000000)" fill="currentColor">
+            <g transform="translate(20.000000, 20.000000)">
+                <path d="M196.011452,6.74747945 L189.582881,0.318908023 C189.432211,0.16823838 189.231318,0.0803477551 189.01787,0.0803477551 C188.578417,0.0803477551 188.214298,0.444466059 188.214298,0.883919184 L188.214298,4.0982049 L185.401798,4.0982049 C181.283495,4.0982049 176.160727,4.82644151 174.41547,9.15819374 C173.888126,10.4891089 173.750013,11.9330263 173.750013,13.3392763 C173.750013,15.0970888 174.628919,17.3948009 175.3446,19.0019437 C175.482713,19.2907272 175.620827,19.6925129 175.809164,19.9561848 C175.897055,20.0817428 175.984946,20.1696335 176.160727,20.1696335 C176.411843,20.1696335 176.562513,19.9687406 176.562513,19.7301803 C176.562513,19.5292875 176.512289,19.303283 176.499733,19.1023902 C176.462066,18.5876022 176.436954,18.0728143 176.436954,17.5580263 C176.436954,11.568908 179.990247,10.5267763 185.401798,10.5267763 L188.214298,10.5267763 L188.214298,13.741062 C188.214298,14.1805152 188.578417,14.5446335 189.01787,14.5446335 C189.231318,14.5446335 189.432211,14.4567428 189.582881,14.3060732 L196.011452,7.87750177 C196.162122,7.72683213 196.250013,7.52593927 196.250013,7.31249061 C196.250013,7.09904195 196.162122,6.89814909 196.011452,6.74747945 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg></span><span class=" f:.8 d:b t-t:c ">share</span></button></div></li></ul></div></div></div></div></div><div class="ReactCollapse--collapse" style="overflow: hidden; height: 0px;"><div class="ReactCollapse--content"><div class=" bg:gray-ll p-l:2 "><div class=" f:.9 f-w:700 m-b:.5 ">Share this idea</div><ul class=" l-s-t:n m-y:0 p-l:0 f:.8 t-a:c d:f flx-w:w flx-w:n@md "><li class=" flx-g:0 flx-s:0 "><div><button class=" sb a-i:c d:f flx-d:c p-x:.6 o:v p-b:.8 "><div class=" w:6 h:6 m-x:a m-b:.1 pos:r "><span class="SVGInline SVGInline--cleaned c:facebook pos:r z-i:1 "><svg class="SVGInline-svg SVGInline--cleaned-svg c:facebook-svg pos:r-svg z-i:1-svg -svg" fill="currentColor" style="width: 100%;height: 100%;" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 12C121.239 12 12 121.259 12 256c0 134.762 109.239 244 244 244 134.762 0 244-109.238 244-244 0-134.741-109.238-244-244-244zm52 174h-34.314c-4.051 0-8.686 5.147-8.686 12.243V223h43v35h-43v106h-40V258h-37v-35h37v-20.785C225 172.562 245.396 148 273.686 148H308v38z"></path></svg></span><div class=" b-r:10 bg:white bottom:.1 left:.1 pos:a right:.1 top:.1 z-i:0 "></div></div><span class="">Facebook</span></button></div></li><li class=" flx-g:0 flx-s:0 "><div><button class=" sb a-i:c d:f flx-d:c p-x:.6 o:v p-b:.8 "><div class=" w:6 h:6 m-x:a m-b:.1 pos:r "><span class="SVGInline SVGInline--cleaned c:linkedin pos:r z-i:1 "><svg class="SVGInline-svg SVGInline--cleaned-svg c:linkedin-svg pos:r-svg z-i:1-svg -svg" fill="currentColor" style="width: 100%;height: 100%;" viewBox="0 0 488 488" xmlns="http://www.w3.org/2000/svg"><title>circle-linkedin</title><path d="M243.98.007C109.236.007 0 109.262 0 244c0 134.758 109.236 243.993 243.98 243.993C378.724 487.993 488 378.758 488 244 488 109.262 378.725.007 243.98.007zm-92.272 211.998h39.58v127.266h-39.58V212.005zm19.804-63.276c12.628 0 22.887 10.292 22.887 22.941 0 12.642-10.271 22.94-22.887 22.94-12.695 0-22.928-10.312-22.928-22.94 0-12.648 10.246-22.941 22.928-22.941zm44.584 63.276h37.938v17.368h.53c5.308-9.995 18.201-20.544 37.448-20.544 40.018 0 47.404 26.343 47.404 60.614v69.802h-39.501v-61.872c0-14.761-.292-33.756-20.571-33.756-20.584 0-23.695 16.097-23.695 32.696v62.958h-39.553V212.005z" fill-rule="evenodd"></path></svg></span><div class=" b-r:10 bg:white bottom:.1 left:.1 pos:a right:.1 top:.1 z-i:0 "></div></div><span class="">LinkedIn</span></button></div></li><li class=" flx-g:0 flx-s:0 "><div><button class=" sb a-i:c d:f flx-d:c p-x:.6 o:v p-b:.8 "><div class=" w:6 h:6 m-x:a m-b:.1 pos:r "><span class="SVGInline SVGInline--cleaned c:twitter pos:r z-i:1 "><svg class="SVGInline-svg SVGInline--cleaned-svg c:twitter-svg pos:r-svg z-i:1-svg -svg" fill="currentColor" style="width: 100%;height: 100%;" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 12C121.239 12 12 121.259 12 256c0 134.762 109.239 244 244 244 134.762 0 244-109.238 244-244 0-134.741-109.238-244-244-244zm83.597 201.136c.08 1.854.106 3.707.106 5.586 0 56.976-43.354 122.688-122.675 122.688-24.358 0-47.021-7.148-66.097-19.38 3.389.397 6.804.609 10.286.609 20.201 0 38.787-6.871 53.547-18.454-18.864-.331-34.802-12.814-40.283-29.957 2.647.517 5.335.781 8.115.781 3.932 0 7.744-.517 11.358-1.496-19.711-3.972-34.59-21.393-34.59-42.295 0-.172 0-.371.013-.529a43.037 43.037 0 0 0 19.526 5.388c-11.583-7.731-19.195-20.929-19.195-35.888a43.17 43.17 0 0 1 5.838-21.697c21.273 26.092 53.044 43.248 88.879 45.049a43.589 43.589 0 0 1-1.112-9.823c0-23.815 19.314-43.129 43.116-43.129a42.955 42.955 0 0 1 31.453 13.635 86.758 86.758 0 0 0 27.402-10.465c-3.23 10.054-10.062 18.513-18.97 23.861 8.724-1.046 17.063-3.362 24.781-6.804-5.772 8.645-13.078 16.257-21.498 22.32z"></path></svg></span><div class=" b-r:10 bg:white bottom:.1 left:.1 pos:a right:.1 top:.1 z-i:0 "></div></div><span class="">Twitter</span></button></div></li><li class=" flx-g:0 flx-s:0 "><div><button class=" sb a-i:c d:f flx-d:c p-x:.6 o:v p-b:.8 "><div class=" w:6 h:6 m-x:a m-b:.1 pos:r "><span class="SVGInline SVGInline--cleaned c:email pos:r z-i:1 c:gray-d"><svg class="SVGInline-svg SVGInline--cleaned-svg c:email-svg pos:r-svg z-i:1-svg c:gray-d-svg" fill="currentColor" style="width: 100%;height: 100%;" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 12C121.239 12 12 121.259 12 255.986 12 390.734 121.239 500 256 500c134.762 0 244-109.266 244-244.014C500 121.259 390.762 12 256 12zM152.321 185h207.357c10.974 0 5.309 10.057-.661 13.273-5.998 3.204-88.84 47.688-91.924 49.342-3.072 1.655-7.069 2.465-11.107 2.465-4.011 0-7.995-.826-11.105-2.481-3.045-1.654-85.914-46.119-91.898-49.323-5.997-3.216-11.635-13.276-.662-13.276zM366 315.332c0 5.123-6.533 11.668-11.881 11.668H157.854C152.56 327 146 320.455 146 315.332v-89.911c0-2.251-.202-5.189 4.604-2.688 6.791 3.561 90.22 47.232 94.376 49.391 4.157 2.171 7.045 2.448 11.057 2.448 4.037 0 6.918-.304 11.075-2.448 4.183-2.171 87.502-45.83 94.307-49.391 4.792-2.502 4.581.437 4.581 2.688v89.911z"></path></svg></span></div><span class="">Email</span></button></div></li></ul></div></div></div><div><div class=""><ul class="c:black d:f o-x:s o-y:h p-t:.5 p-x:2 sl b-b:1 b-c:gray-l c:gray p-l:0@lg"><li><a class="t-d:n d:b active" aria-current="page" href="https://www.ted.com/talks/jer_thorp_make_data_more_human"><span class="pos:r t-d:n c:current t-a:l m-l:2 m-r:1 d:b hover/b-b:red hover/b-b-s:3 b-b:3 b-c:red f-w:700 c:black" style="white-space: nowrap; top: 1px;"><div class="p-t:.5 cur:p p-b:.4 d:b f-w:700"><span class="c:black">Details</span><span class=" d:b f-w:400 f:.9 ">About the talk</span></div></span></a></li><li class="flx-s:0"><a class="t-d:n d:b" href="https://www.ted.com/talks/jer_thorp_make_data_more_human/discussion"><span class="pos:r t-d:n c:current t-a:l m-l:2 m-r:1 d:b hover/b-b:red hover/b-b-s:3" style="white-space: nowrap; top: 1px;"><div class="p-t:.5 cur:p p-b:.4 d:b f-w:700"><span class="c:black">Comments (59)</span><span class=" d:b f-w:400 f:.9 ">Join the conversation</span></div></span></a></li></ul></div><div class=" p:2 p-t:4@md "><section><div class="Grid Grid--with-gutter"><div class="Grid__cell w:3of4@md"><p class=" l-h:n m-b:1 ">Jer Thorp creates beautiful data visualizations to put abstract data into a human context. At TEDxVancouver, he shares his moving projects, from graphing an entire year's news cycle, to mapping the way people share articles across the internet.</p><div></div><p class=" f:.9 f-s:i l-h:n m-t:2 "><span><span><span>This talk was presented to a local audience at TEDxVancouver, an independent event. TED's editors chose to feature it for you.</span></span></span></p><section class="m-t:7"><div class=" b-t:gray-l t-t:u f:.9 m-b:1 "><div class=" b-t:black d:i-b p-y:.4 " style="margin-top: -1px;">About the speaker</div></div><div><div><a href="https://www.ted.com/speakers/jer_thorp" class="sa d:b"><div class=" m-b:1 d:f "><div><div class="m-r:2"><div class=" w:10 bg:gray-l.6 b-r:10 o:h " style="position: relative; background-image: url(&quot;https://pe.tedcdn.com/images/ted/3a86568fd52bac232f59bbbbbae9feec67a51039_254x191.jpg&quot;); background-position: center center; background-size: cover; background-repeat: no-repeat;"><div style="display: block; padding-top: 100%;"></div><div style="position: absolute; bottom: 0px; left: 0px; top: 0px; right: 0px;"></div></div></div></div><div class=" a-s:c "><div class="m-b:.2"><span class=" f-w:700 l-h:t f:1 t-d:n ">Jer Thorp</span><span><span class="d:n d:i@md"> · </span><span class=" d:b d:i@md c:gray-d f:.9 ">Data artist</span></span></div><p class=" d:n d:b@md l-h:n m-b:.5 ">Jer Thorp’s work focuses on adding meaning and narrative to huge amounts of data as a way to help people take control of the information that surrounds them.</p></div></div><p class=" d:b d:n@md l-h:n m-b:.5 ">Jer Thorp’s work focuses on adding meaning and narrative to huge amounts of data as a way to help people take control of the information that surrounds them.</p></a></div></div></section><section class="m-t:7"><div class="b-t:gray-l"><div class=" b-t:gray-l m-b:1 f:.9 b-t:black d:i-b p-y:.4 t-t:u " style="margin-top: -1px;">About TEDx</div><div><div><p class=" l-h:n m-b:1 ">TEDx was created in the spirit of TED's mission, "ideas worth spreading." It supports independent organizers who want to create a TED-like event in their own community.</p><a rel="noopener noreferrer" target="_blank" href="https://www.ted.com/tedx/events">Find a TEDx event near you →</a></div></div></div></section></div><div class="Grid__cell w:1of4@md d:n d:i-b@md"><div class=" f:.9 p-x:3@md c:black t-a:l "><div class=" d:n d:b@lg m-b:3 "><span class=" f-w:700 f:3 ">256,583</span> views</div><div class="m-b:2"><div><span class="f-w:700">TEDxVancouver&nbsp;</span><span>| November 2011</span></div></div><div><h2 class=" f-w:700 m-b:.4 ">Related tags</h2><ul class=" l-s-t:n p-l:0 m-y:0 "><li class=" t-t:c "><a href="https://www.ted.com/topics/tedx">TEDx</a></li><li class=" t-t:c "><a href="https://www.ted.com/topics/data">data</a></li><li class=" t-t:c "><a href="https://www.ted.com/topics/design">design</a></li><li class="m-t:.1"><button class=" sb c:gray f:2 l-s:t p-r:1 ">•••</button></li></ul></div></div></div></div></section></div></div></div></div></div><div class=" Grid__cell d:n d:b@md bg:gray-ll w:full w:1of3@md flx-g:1 "><div><div class=" p-t:1@md p-r:2@md p-l:4@md p-b:2 p-b:0@md " style="max-width: 35rem;"><div class=" d:f p-t:.5 p-b:2 "><div class=" Grid__cell p-r:1 w:3of5 w:2of3@xxs "><div class=" f:1 f:2@xxs f:1@md f:2@lg f-w:700 m-b:.4 " style="white-space: nowrap;">What inspires you?</div><div class="f:.9 l-h:d">Tell us your interests and we'll pick TED Talks just for you.</div></div><a class=" Grid__cell bg:gray-dd hover/c:white c:white d:f f:1 f:.9@md f:1@lg f-w:700 b-r:.3 j-c:c t-a:c t-d:n w:2of5 w:1of3@xxs " href="https://www.ted.com/recommends?exploreCTASource=talks-page.sidebar"><span class="d:b a-s:c" style="white-space: nowrap;">Get Started</span></a></div><div class=" w:full pos:r "><a href="https://www.ted.com/recommends?exploreCTASource=talks-page.sidebar" class="d:b w:full"><div class=" bg:gray-l.6 o:h " style="position: relative; background-image: url(&quot;https://pl.tedcdn.com/explore/web/cta_art_pills_v2.svg&quot;); background-position: center center; background-size: cover;"><div style="display: block; padding-top: 33.3333%;"></div><div style="position: absolute; bottom: 0px; left: 0px; top: 0px; right: 0px;"></div></div></a></div></div></div><div class="Grid d:f"><div class="Grid__cell flx-g:1"><div><div><div class=" d:b d:n@md "><div><div class=" p-t:1@md p-r:2@md p-l:4@md p-b:2 p-b:0@md " style="max-width: 35rem;"><div class=" d:f p-t:.5 p-b:2 "><div class=" Grid__cell p-r:1 w:3of5 w:2of3@xxs "><div class=" f:1 f:2@xxs f:1@md f:2@lg f-w:700 m-b:.4 " style="white-space: nowrap;">What inspires you?</div><div class="f:.9 l-h:d">Tell us your interests and we'll pick TED Talks just for you.</div></div><a class=" Grid__cell bg:gray-dd hover/c:white c:white d:f f:1 f:.9@md f:1@lg f-w:700 b-r:.3 j-c:c t-a:c t-d:n w:2of5 w:1of3@xxs " href="https://www.ted.com/recommends?exploreCTASource=talks-page.sidebar"><span class="d:b a-s:c" style="white-space: nowrap;">Get Started</span></a></div><div class=" w:full pos:r "><a href="https://www.ted.com/recommends?exploreCTASource=talks-page.sidebar" class="d:b w:full"><div class=" bg:gray-l.6 o:h " style="position: relative; background-image: url(&quot;https://pl.tedcdn.com/explore/web/cta_art_pills_v2.svg&quot;); background-position: center center; background-size: cover;"><div style="display: block; padding-top: 33.3333%;"></div><div style="position: absolute; bottom: 0px; left: 0px; top: 0px; right: 0px;"></div></div></a></div></div></div></div><div class="react-tabs" data-tabs="true"><ul class="b-b:1 b-c:white b-c:gray-l@md f-w:700@md sl d:f p-t:1@md m-b:1 c:gray-d@md f:.9 f:1@md" role="tablist"><li class=" p-b:.1 p-r:.5 cur:p pos:r m-l:4@md  b:red@md c:black b-b-s:1 b-b-s:s b-c:black b-b-s:2@md f-w:700" role="tab" id="react-tabs-0" aria-selected="true" aria-disabled="false" aria-controls="react-tabs-1" tabindex="0" style="top: 1px;">Watch next</li><li class=" p-b:.1 p-r:.5 cur:p pos:r m-l:4@md " role="tab" id="react-tabs-2" aria-selected="false" aria-disabled="false" aria-controls="react-tabs-3" style="top: 1px;">Your list </li></ul><div class="react-tabs__tab-panel react-tabs__tab-panel--selected" role="tabpanel" id="react-tabs-1" aria-labelledby="react-tabs-0"><section class="m-t:2 m-t:4@md"><div><div style="opacity: 1;"><div><div><div style="opacity: 1;"><div class=" d:b m-b:1 pos:r p-r:2@md p-l:4@md "><div class="hover/grow-t hover/appear"><div class="flx-g:1"><a aria-label="what we learned from 5 million books" href="https://www.ted.com/talks/what_we_learned_from_5_million_books"><div class=" Grid__cell w:1of2 w:2of3@xs w:3of4@sm w:2of3@md w:1of2@lg p-t:.5 p-r:4 "><div class=" c:black l-h:t f:1 f:.9@md f:1@lg ">What we learned from 5 million books</div><div class=" d:i-b c:gray-d f:.9 f:.8@md f:.9@lg l-h:t ">1.9M views</div></div></a><div class=" Grid__cell w:1of2 w:1of3@xs w:1of4@sm w:1of3@md w:1of2@lg m-w:md pos:r hover/appear "><div class=" bg:gray-l.6 " style="position: relative; background-image: url(&quot;https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/7b2e7e2bac40b3ab6d040991f84b70e2b64a6613_800x600.jpg?op=%5E&amp;c=288%2C162&amp;gravity=t&amp;u%5Br%5D=2&amp;u%5Bs%5D=0.5&amp;u%5Ba%5D=0.8&amp;u%5Bt%5D=0.03&amp;quality=82&amp;w=288&amp;h=162&quot;); background-size: cover; background-repeat: no-repeat;"><div style="display: block; padding-top: 56.25%;"></div><div style="position: absolute; bottom: 0px; left: 0px; top: 0px; right: 0px;"></div></div><div class="pos:a bottom:.5 right:.5 c:white bg:black f-w:600 p-y:.1 p-x:.4 f:.7 f:.8">14:08</div><a class=" sa d:b " aria-label="what we learned from 5 million books" href="https://www.ted.com/talks/what_we_learned_from_5_million_books"><div class=" pos:a pos:c d:f j-c:c a-i:c h:full w:full hover/appear:target "><div class=" d:i-b b-r:5 bg:black.2 p:.1 hover/grow-t:target "><span class="SVGInline SVGInline--cleaned d:b c:white w:4 h:4 w:7 h:7"><svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg c:white-svg w:4-svg h:4-svg w:7-svg h:7-svg" fill="currentColor" style="width: 100%;height: 100%;" x="0" y="0" viewBox="0 0 200 200">
+  <polygon points="70.993,60.347 153.398,102.384 70.993,144.42   "></polygon>
+</svg></span></div></div></a><div class=" l-h:d pos:a top:.8 right:.8 hover/appear:target "><div class=" d:i-b b-r:5 o:h bg:black.2 c:white "><button class="sb"><span class="SVGInline SVGInline--cleaned d:b w:4 h:4"><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg w:4-svg h:4-svg" fill="currentColor" style="width: 100%;height: 100%;" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined-Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <path d="M11,25 L11,23 L21,23 L21,25 L11,25 Z M30,24 L34,24 L34,26 L30,26 L30,30 L28,30 L28,26 L24,26 L24,24 L28,24 L28,20 L30,20 L30,24 Z M11,17 L11,15 L25,15 L25,17 L11,17 Z M11,21 L11,19 L25,19 L25,21 L11,21 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg></span></button></div></div></div></div></div></div></div><div style="opacity: 1;"><div class=" d:b m-b:1 pos:r p-r:2@md p-l:4@md "><div class="hover/grow-t hover/appear"><div class="flx-g:1"><a aria-label="david mccandless the beauty of data visualization" href="https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization"><div class=" Grid__cell w:1of2 w:2of3@xs w:3of4@sm w:2of3@md w:1of2@lg p-t:.5 p-r:4 "><div class=" c:black l-h:t f:1 f:.9@md f:1@lg ">The beauty of data visualization</div><div class=" d:i-b c:gray-d f:.9 f:.8@md f:.9@lg l-h:t ">2.8M views</div></div></a><div class=" Grid__cell w:1of2 w:1of3@xs w:1of4@sm w:1of3@md w:1of2@lg m-w:md pos:r hover/appear "><div class=" bg:gray-l.6 " style="position: relative; background-image: url(&quot;https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/192641_800x600.jpg?op=%5E&amp;c=288%2C162&amp;gravity=t&amp;u%5Br%5D=2&amp;u%5Bs%5D=0.5&amp;u%5Ba%5D=0.8&amp;u%5Bt%5D=0.03&amp;quality=82&amp;w=288&amp;h=162&quot;); background-size: cover; background-repeat: no-repeat;"><div style="display: block; padding-top: 56.25%;"></div><div style="position: absolute; bottom: 0px; left: 0px; top: 0px; right: 0px;"></div></div><div class="pos:a bottom:.5 right:.5 c:white bg:black f-w:600 p-y:.1 p-x:.4 f:.7 f:.8">17:56</div><a class=" sa d:b " aria-label="david mccandless the beauty of data visualization" href="https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization"><div class=" pos:a pos:c d:f j-c:c a-i:c h:full w:full hover/appear:target "><div class=" d:i-b b-r:5 bg:black.2 p:.1 hover/grow-t:target "><span class="SVGInline SVGInline--cleaned d:b c:white w:4 h:4 w:7 h:7"><svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg c:white-svg w:4-svg h:4-svg w:7-svg h:7-svg" fill="currentColor" style="width: 100%;height: 100%;" x="0" y="0" viewBox="0 0 200 200">
+  <polygon points="70.993,60.347 153.398,102.384 70.993,144.42   "></polygon>
+</svg></span></div></div></a><div class=" l-h:d pos:a top:.8 right:.8 hover/appear:target "><div class=" d:i-b b-r:5 o:h bg:black.2 c:white "><button class="sb"><span class="SVGInline SVGInline--cleaned d:b w:4 h:4"><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg w:4-svg h:4-svg" fill="currentColor" style="width: 100%;height: 100%;" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined-Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <path d="M11,25 L11,23 L21,23 L21,25 L11,25 Z M30,24 L34,24 L34,26 L30,26 L30,30 L28,30 L28,26 L24,26 L24,24 L28,24 L28,20 L30,20 L30,24 Z M11,17 L11,15 L25,15 L25,17 L11,17 Z M11,21 L11,19 L25,19 L25,21 L11,21 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg></span></button></div></div></div></div></div></div></div><div style="opacity: 1;"><div><div class=" m-b:2 m-t:2@md p-t:5 p-b:7 t-a:c " style="display: block;"><div class=" d:i-b "><div class=" c:gray f:.8 m-b:2 ">TED Talks are free thanks to our partners and advertisers</div><div><div id="ad-srcy96wa69" data-google-query-id="CKuxwPaihN8CFQPHZAod4fwGfg"><div id="google_ads_iframe_/5641/ted2/talk_0__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/5641/ted2/talk_0" title="3rd party ad content" name="google_ads_iframe_/5641/ted2/talk_0" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" data-google-container-id="1" data-load-complete="true" src="./Jer Thorp_ Make data more human _ TED Talk_files/saved_resource.html"></iframe></div></div></div></div></div></div><div class=" d:b m-b:1 pos:r p-r:2@md p-l:4@md "><div class="hover/grow-t hover/appear"><div class="flx-g:1"><a aria-label="hans rosling on global population growth" href="https://www.ted.com/talks/hans_rosling_on_global_population_growth"><div class=" Grid__cell w:1of2 w:2of3@xs w:3of4@sm w:2of3@md w:1of2@lg p-t:.5 p-r:4 "><div class=" c:black l-h:t f:1 f:.9@md f:1@lg ">Global population growth, box by box</div><div class=" d:i-b c:gray-d f:.9 f:.8@md f:.9@lg l-h:t ">3.3M views</div></div></a><div class=" Grid__cell w:1of2 w:1of3@xs w:1of4@sm w:1of3@md w:1of2@lg m-w:md pos:r hover/appear "><div class=" bg:gray-l.6 " style="position: relative; background-image: url(&quot;https://pi.tedcdn.com/r/s3.amazonaws.com/talkstar-photos/uploads/0ccef72b-3aa0-4a29-a5a5-b2e8bd59aca1/HansRosling_2010S-embed.jpg?op=%5E&amp;c=288%2C162&amp;gravity=t&amp;u%5Br%5D=2&amp;u%5Bs%5D=0.5&amp;u%5Ba%5D=0.8&amp;u%5Bt%5D=0.03&amp;quality=82&amp;w=288&amp;h=162&quot;); background-size: cover; background-repeat: no-repeat;"><div style="display: block; padding-top: 56.25%;"></div><div style="position: absolute; bottom: 0px; left: 0px; top: 0px; right: 0px;"></div></div><div class="pos:a bottom:.5 right:.5 c:white bg:black f-w:600 p-y:.1 p-x:.4 f:.7 f:.8">10:04</div><a class=" sa d:b " aria-label="hans rosling on global population growth" href="https://www.ted.com/talks/hans_rosling_on_global_population_growth"><div class=" pos:a pos:c d:f j-c:c a-i:c h:full w:full hover/appear:target "><div class=" d:i-b b-r:5 bg:black.2 p:.1 hover/grow-t:target "><span class="SVGInline SVGInline--cleaned d:b c:white w:4 h:4 w:7 h:7"><svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg c:white-svg w:4-svg h:4-svg w:7-svg h:7-svg" fill="currentColor" style="width: 100%;height: 100%;" x="0" y="0" viewBox="0 0 200 200">
+  <polygon points="70.993,60.347 153.398,102.384 70.993,144.42   "></polygon>
+</svg></span></div></div></a><div class=" l-h:d pos:a top:.8 right:.8 hover/appear:target "><div class=" d:i-b b-r:5 o:h bg:black.2 c:white "><button class="sb"><span class="SVGInline SVGInline--cleaned d:b w:4 h:4"><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg w:4-svg h:4-svg" fill="currentColor" style="width: 100%;height: 100%;" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined-Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <path d="M11,25 L11,23 L21,23 L21,25 L11,25 Z M30,24 L34,24 L34,26 L30,26 L30,30 L28,30 L28,26 L24,26 L24,24 L28,24 L28,20 L30,20 L30,24 Z M11,17 L11,15 L25,15 L25,17 L11,17 Z M11,21 L11,19 L25,19 L25,21 L11,21 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg></span></button></div></div></div></div></div></div></div><div style="opacity: 1;"><div class=" d:b m-b:1 pos:r p-r:2@md p-l:4@md "><div class="hover/grow-t hover/appear"><div class="flx-g:1"><a aria-label="tim berners lee on the next web" href="https://www.ted.com/talks/tim_berners_lee_on_the_next_web"><div class=" Grid__cell w:1of2 w:2of3@xs w:3of4@sm w:2of3@md w:1of2@lg p-t:.5 p-r:4 "><div class=" c:black l-h:t f:1 f:.9@md f:1@lg ">The next web</div><div class=" d:i-b c:gray-d f:.9 f:.8@md f:.9@lg l-h:t ">1.5M views</div></div></a><div class=" Grid__cell w:1of2 w:1of3@xs w:1of4@sm w:1of3@md w:1of2@lg m-w:md pos:r hover/appear "><div class=" bg:gray-l.6 " style="position: relative; background-image: url(&quot;https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/77260_800x600.jpg?op=%5E&amp;c=288%2C162&amp;gravity=t&amp;u%5Br%5D=2&amp;u%5Bs%5D=0.5&amp;u%5Ba%5D=0.8&amp;u%5Bt%5D=0.03&amp;quality=82&amp;w=288&amp;h=162&quot;); background-size: cover; background-repeat: no-repeat;"><div style="display: block; padding-top: 56.25%;"></div><div style="position: absolute; bottom: 0px; left: 0px; top: 0px; right: 0px;"></div></div><div class="pos:a bottom:.5 right:.5 c:white bg:black f-w:600 p-y:.1 p-x:.4 f:.7 f:.8">16:23</div><a class=" sa d:b " aria-label="tim berners lee on the next web" href="https://www.ted.com/talks/tim_berners_lee_on_the_next_web"><div class=" pos:a pos:c d:f j-c:c a-i:c h:full w:full hover/appear:target "><div class=" d:i-b b-r:5 bg:black.2 p:.1 hover/grow-t:target "><span class="SVGInline SVGInline--cleaned d:b c:white w:4 h:4 w:7 h:7"><svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg c:white-svg w:4-svg h:4-svg w:7-svg h:7-svg" fill="currentColor" style="width: 100%;height: 100%;" x="0" y="0" viewBox="0 0 200 200">
+  <polygon points="70.993,60.347 153.398,102.384 70.993,144.42   "></polygon>
+</svg></span></div></div></a><div class=" l-h:d pos:a top:.8 right:.8 hover/appear:target "><div class=" d:i-b b-r:5 o:h bg:black.2 c:white "><button class="sb"><span class="SVGInline SVGInline--cleaned d:b w:4 h:4"><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg w:4-svg h:4-svg" fill="currentColor" style="width: 100%;height: 100%;" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined-Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <path d="M11,25 L11,23 L21,23 L21,25 L11,25 Z M30,24 L34,24 L34,26 L30,26 L30,30 L28,30 L28,26 L24,26 L24,24 L28,24 L28,20 L30,20 L30,24 Z M11,17 L11,15 L25,15 L25,17 L11,17 Z M11,21 L11,19 L25,19 L25,21 L11,21 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg></span></button></div></div></div></div></div></div></div><div style="opacity: 1;"><div class=" d:b m-b:1 pos:r p-r:2@md p-l:4@md "><div class="hover/grow-t hover/appear"><div class="flx-g:1"><a aria-label="kenneth cukier big data is better data" href="https://www.ted.com/talks/kenneth_cukier_big_data_is_better_data"><div class=" Grid__cell w:1of2 w:2of3@xs w:3of4@sm w:2of3@md w:1of2@lg p-t:.5 p-r:4 "><div class=" c:black l-h:t f:1 f:.9@md f:1@lg ">Big data is better data</div><div class=" d:i-b c:gray-d f:.9 f:.8@md f:.9@lg l-h:t ">1.5M views</div></div></a><div class=" Grid__cell w:1of2 w:1of3@xs w:1of4@sm w:1of3@md w:1of2@lg m-w:md pos:r hover/appear "><div class=" bg:gray-l.6 " style="position: relative; background-image: url(&quot;https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/c08e045faca0cd007e468e7950e6ef5433c3f44c_2880x1620.jpg?op=%5E&amp;c=288%2C162&amp;gravity=t&amp;u%5Br%5D=2&amp;u%5Bs%5D=0.5&amp;u%5Ba%5D=0.8&amp;u%5Bt%5D=0.03&amp;quality=82&amp;w=288&amp;h=162&quot;); background-size: cover; background-repeat: no-repeat;"><div style="display: block; padding-top: 56.25%;"></div><div style="position: absolute; bottom: 0px; left: 0px; top: 0px; right: 0px;"></div></div><div class="pos:a bottom:.5 right:.5 c:white bg:black f-w:600 p-y:.1 p-x:.4 f:.7 f:.8">15:51</div><a class=" sa d:b " aria-label="kenneth cukier big data is better data" href="https://www.ted.com/talks/kenneth_cukier_big_data_is_better_data"><div class=" pos:a pos:c d:f j-c:c a-i:c h:full w:full hover/appear:target "><div class=" d:i-b b-r:5 bg:black.2 p:.1 hover/grow-t:target "><span class="SVGInline SVGInline--cleaned d:b c:white w:4 h:4 w:7 h:7"><svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg c:white-svg w:4-svg h:4-svg w:7-svg h:7-svg" fill="currentColor" style="width: 100%;height: 100%;" x="0" y="0" viewBox="0 0 200 200">
+  <polygon points="70.993,60.347 153.398,102.384 70.993,144.42   "></polygon>
+</svg></span></div></div></a><div class=" l-h:d pos:a top:.8 right:.8 hover/appear:target "><div class=" d:i-b b-r:5 o:h bg:black.2 c:white "><button class="sb"><span class="SVGInline SVGInline--cleaned d:b w:4 h:4"><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg w:4-svg h:4-svg" fill="currentColor" style="width: 100%;height: 100%;" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined-Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <path d="M11,25 L11,23 L21,23 L21,25 L11,25 Z M30,24 L34,24 L34,26 L30,26 L30,30 L28,30 L28,26 L24,26 L24,24 L28,24 L28,20 L30,20 L30,24 Z M11,17 L11,15 L25,15 L25,17 L11,17 Z M11,21 L11,19 L25,19 L25,21 L11,21 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg></span></button></div></div></div></div></div></div></div><div style="opacity: 1;"><div class=" d:b m-b:1 pos:r p-r:2@md p-l:4@md "><div class="hover/grow-t hover/appear"><div class="flx-g:1"><a aria-label="giorgia lupi how we can find ourselves in data" href="https://www.ted.com/talks/giorgia_lupi_how_we_can_find_ourselves_in_data"><div class=" Grid__cell w:1of2 w:2of3@xs w:3of4@sm w:2of3@md w:1of2@lg p-t:.5 p-r:4 "><div class=" c:black l-h:t f:1 f:.9@md f:1@lg ">How we can find ourselves in data</div><div class=" d:i-b c:gray-d f:.9 f:.8@md f:.9@lg l-h:t ">1.2M views</div></div></a><div class=" Grid__cell w:1of2 w:1of3@xs w:1of4@sm w:1of3@md w:1of2@lg m-w:md pos:r hover/appear "><div class=" bg:gray-l.6 " style="position: relative; background-image: url(&quot;https://pi.tedcdn.com/r/s3.amazonaws.com/talkstar-photos/uploads/9e067eef-7f85-46c4-9d1f-6bf296722c34/GiorgiaLupi_2017S-embed.jpg?op=%5E&amp;c=288%2C162&amp;gravity=t&amp;u%5Br%5D=2&amp;u%5Bs%5D=0.5&amp;u%5Ba%5D=0.8&amp;u%5Bt%5D=0.03&amp;quality=82&amp;w=288&amp;h=162&quot;); background-size: cover; background-repeat: no-repeat;"><div style="display: block; padding-top: 56.25%;"></div><div style="position: absolute; bottom: 0px; left: 0px; top: 0px; right: 0px;"></div></div><div class="pos:a bottom:.5 right:.5 c:white bg:black f-w:600 p-y:.1 p-x:.4 f:.7 f:.8">11:13</div><a class=" sa d:b " aria-label="giorgia lupi how we can find ourselves in data" href="https://www.ted.com/talks/giorgia_lupi_how_we_can_find_ourselves_in_data"><div class=" pos:a pos:c d:f j-c:c a-i:c h:full w:full hover/appear:target "><div class=" d:i-b b-r:5 bg:black.2 p:.1 hover/grow-t:target "><span class="SVGInline SVGInline--cleaned d:b c:white w:4 h:4 w:7 h:7"><svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg c:white-svg w:4-svg h:4-svg w:7-svg h:7-svg" fill="currentColor" style="width: 100%;height: 100%;" x="0" y="0" viewBox="0 0 200 200">
+  <polygon points="70.993,60.347 153.398,102.384 70.993,144.42   "></polygon>
+</svg></span></div></div></a><div class=" l-h:d pos:a top:.8 right:.8 hover/appear:target "><div class=" d:i-b b-r:5 o:h bg:black.2 c:white "><button class="sb"><span class="SVGInline SVGInline--cleaned d:b w:4 h:4"><!--?xml version="1.0" encoding="UTF-8"?-->
+<svg class="SVGInline-svg SVGInline--cleaned-svg d:b-svg w:4-svg h:4-svg" fill="currentColor" style="width: 100%;height: 100%;" viewBox="0 0 41 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined-Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g fill-rule="nonzero">
+            <g>
+                <path d="M11,25 L11,23 L21,23 L21,25 L11,25 Z M30,24 L34,24 L34,26 L30,26 L30,30 L28,30 L28,26 L24,26 L24,24 L28,24 L28,20 L30,20 L30,24 Z M11,17 L11,15 L25,15 L25,17 L11,17 Z M11,21 L11,19 L25,19 L25,21 L11,21 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg></span></button></div></div></div></div></div></div></div><div style="opacity: 1;"><div class=" m-b:2 m-t:2@md p-b:7 p-t:5 t-a:c " style="display: block; visibility: hidden;"><div class=" d:i-b "><div class=" c:gray f:.8 m-b:2 ">TED Talks are free thanks to our partners and advertisers</div><div><div id="ad-dm7wtjddny" data-google-query-id="CN7ovvaihN8CFULrZAodwBwOhQ"><div id="google_ads_iframe_/5641/ted2/talk_1__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/5641/ted2/talk_1" title="3rd party ad content" name="google_ads_iframe_/5641/ted2/talk_1" width="120" height="60" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom;" src="./Jer Thorp_ Make data more human _ TED Talk_files/saved_resource(1).html"></iframe></div></div></div></div></div></div></div></div></div></div></section></div><div class="react-tabs__tab-panel" role="tabpanel" id="react-tabs-3" aria-labelledby="react-tabs-2"></div></div></div></div></div></div></div></div></div><div></div></div></div></div>
+	</div>
+
+<script>q("talkPage.init", {
+	"el": "[data-talk-page]",
+	"__INITIAL_DATA__": {"comments":{"id":11635,"count":59,"talk_id":1400},"threadId":11635,"current_talk":"1400","description":"Jer Thorp creates beautiful data visualizations to put abstract data into a human context. At TEDxVancouver, he shares his moving projects, from graphing an entire year's news cycle, to mapping the way people share articles across the internet.","event":"TEDxVancouver","language":"en","name":"Jer Thorp: Make data more human","slug":"jer_thorp_make_data_more_human","speakers":[{"id":"1266","slug":"jer_thorp","is_published":true,"firstname":"Jer","lastname":"Thorp","middleinitial":"","title":"","description":"Data artist","photo_url":"https://pe.tedcdn.com/images/ted/3a86568fd52bac232f59bbbbbae9feec67a51039_254x191.jpg","whatotherssay":"Underpinning Jer’s examples is a powerful common thread of humanizing data and making it a living piece of our personal histories and cultural poetics.","whotheyare":"Jer Thorp’s work focuses on adding meaning and narrative to huge amounts of data as a way to help people take control of the information that surrounds them.","whylisten":"<p>Currently the data artist in residence at the <em>New York Times</em>, Jer&rsquo;s software-based art has been featured all over the world. His former career as a data artist explains why his art often brings big data sets to life and is deeply influenced by science. Originally from Vancouver, he lives in New York City, where, along with his work at the <em>New York Times</em>, he teaches in NYU&rsquo;s ITP program. </p>"}],"url":"https://www.ted.com/talks/jer_thorp_make_data_more_human","viewed_count":256583,"talks":[{"curator_approved":true,"description":"Jer Thorp creates beautiful data visualizations to put abstract data into a human context. At TEDxVancouver, he shares his moving projects, from graphing an entire year's news cycle, to mapping the way people share articles across the internet.","downloads":{"id":1400,"languages":[],"nativeDownloads":{"low":"https://download.ted.com/talks/JerThorp_2011X-light.mp4?apikey=acme-roadrunner","medium":"https://download.ted.com/talks/JerThorp_2011X.mp4?apikey=acme-roadrunner","high":"https://download.ted.com/talks/JerThorp_2011X-480p.mp4?apikey=acme-roadrunner"},"subtitledDownloads":null,"audioDownload":"https://download.ted.com/talks/JerThorp_2011X.mp3?apikey=acme-roadrunner"},"duration":1042.0,"event":"TEDxVancouver","institute_partner_name":null,"salon_partner_name":null,"event_badge":null,"is_featured":true,"hero":"https://pe.tedcdn.com/images/ted/a4f077eed3635ebc7e54065bacc739de19626a39_800x600.jpg","hero_load":"https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/a4f077eed3635ebc7e54065bacc739de19626a39_800x600.jpg?q=50&w=15","id":"1400","player_talks":[{"id":"1400","duration":1042.0,"languages":[],"nativeLanguage":"en","isSubtitleRequired":false,"introDuration":11.82,"adDuration":3.33,"postAdDuration":0.83,"resources":{"h264":[{"bitrate":320,"file":"https://pc.tedcdn.com/talk/stream/2011X/Blank/JerThorp_2011X-320k.mp4?dnt"}],"hls":{"adUrl":"https://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250%2C512x288%2C120x60%2C320x50%2C6x7%2C6x8&correlator=%5Bcorrelator%5D&cust_params=event%3DTEDxVancouver%26id%3D1400%26tag%3DTEDx%2Cdata%2Cdesign%2Cmedia%2Cnews%26talk%3Djer_thorp_make_data_more_human%26year%3D2011&env=vp&gdfp_req=1&impl=s&iu=%2F5641%2Fmobile%2Fios%2Fweb&output=xml_vast2&sz=640x360&unviewed_position_start=1&url=%5Breferrer%5D","maiTargeting":{"id":"1400","talk":"jer_thorp_make_data_more_human","tag":"TEDx,data,design,media,news","year":"2011","event":"TEDxVancouver"},"stream":"https://hls.ted.com/talks/1400.m3u8","metadata":"https://hls.ted.com/talks/1400.json"}},"targeting":{"id":"1400","talk":"jer_thorp_make_data_more_human","tag":"TEDx,data,design,media,news","year":"2011","event":"TEDxVancouver"},"canonical":"https://www.ted.com/talks/jer_thorp_make_data_more_human","name":"Jer Thorp: Make data more human","title":"Make data more human","speaker":"Jer Thorp","thumb":"https://pi.tedcdn.com/r/pe.tedcdn.com/images/ted/a4f077eed3635ebc7e54065bacc739de19626a39_800x600.jpg?quality=89&w=600","slug":"jer_thorp_make_data_more_human","event":"TEDxVancouver","published":1332597708}],"ratings":[{"id":8,"name":"Informative","count":193},{"id":9,"name":"Ingenious","count":108},{"id":10,"name":"Inspiring","count":147},{"id":24,"name":"Persuasive","count":69},{"id":23,"name":"Jaw-dropping","count":47},{"id":22,"name":"Fascinating","count":221},{"id":2,"name":"Confusing","count":22},{"id":7,"name":"Funny","count":28},{"id":1,"name":"Beautiful","count":100},{"id":25,"name":"OK","count":35},{"id":26,"name":"Obnoxious","count":9},{"id":11,"name":"Longwinded","count":32},{"id":21,"name":"Unconvincing","count":34},{"id":3,"name":"Courageous","count":16}],"recorded_at":"2011-11-12T00:00:00.000+00:00","related_talks":[{"id":"1227","hero":"https://pe.tedcdn.com/images/ted/7b2e7e2bac40b3ab6d040991f84b70e2b64a6613_800x600.jpg","speaker":"Jean-Baptiste Michel + Erez Lieberman Aiden","title":"What we learned from 5 million books","duration":848.0,"slug":"what_we_learned_from_5_million_books","viewed_count":1893359},{"id":"937","hero":"https://pe.tedcdn.com/images/ted/192641_800x600.jpg","speaker":"David McCandless","title":"The beauty of data visualization","duration":1076.0,"slug":"david_mccandless_the_beauty_of_data_visualization","viewed_count":2842849},{"id":"912","hero":"https://s3.amazonaws.com/talkstar-photos/uploads/0ccef72b-3aa0-4a29-a5a5-b2e8bd59aca1/HansRosling_2010S-embed.jpg","speaker":"Hans Rosling","title":"Global population growth, box by box","duration":604.0,"slug":"hans_rosling_on_global_population_growth","viewed_count":3309924},{"id":"484","hero":"https://pe.tedcdn.com/images/ted/77260_800x600.jpg","speaker":"Tim Berners-Lee","title":"The next web","duration":983.0,"slug":"tim_berners_lee_on_the_next_web","viewed_count":1474150},{"id":"2094","hero":"https://pe.tedcdn.com/images/ted/c08e045faca0cd007e468e7950e6ef5433c3f44c_2880x1620.jpg","speaker":"Kenneth Cukier","title":"Big data is better data","duration":951.0,"slug":"kenneth_cukier_big_data_is_better_data","viewed_count":1494359},{"id":"2727","hero":"https://s3.amazonaws.com/talkstar-photos/uploads/9e067eef-7f85-46c4-9d1f-6bf296722c34/GiorgiaLupi_2017S-embed.jpg","speaker":"Giorgia Lupi","title":"How we can find ourselves in data","duration":673.0,"slug":"giorgia_lupi_how_we_can_find_ourselves_in_data","viewed_count":1223328}],"slug":"jer_thorp_make_data_more_human","speakers":[{"id":"1266","slug":"jer_thorp","is_published":true,"firstname":"Jer","lastname":"Thorp","middleinitial":"","title":"","description":"Data artist","photo_url":"https://pe.tedcdn.com/images/ted/3a86568fd52bac232f59bbbbbae9feec67a51039_254x191.jpg","whatotherssay":"Underpinning Jer’s examples is a powerful common thread of humanizing data and making it a living piece of our personal histories and cultural poetics.","whotheyare":"Jer Thorp’s work focuses on adding meaning and narrative to huge amounts of data as a way to help people take control of the information that surrounds them.","whylisten":"<p>Currently the data artist in residence at the <em>New York Times</em>, Jer&rsquo;s software-based art has been featured all over the world. His former career as a data artist explains why his art often brings big data sets to life and is deeply influenced by science. Originally from Vancouver, he lives in New York City, where, along with his work at the <em>New York Times</em>, he teaches in NYU&rsquo;s ITP program. </p>"}],"speaker_name":"Jer Thorp","tags":["TEDx","data","design","media","news"],"title":"Make data more human","video_type":{"id":"2","name":"TEDx Talk"},"viewed_count":256583}]}
+})</script></div>
+<footer class="footer">
+<div class="container">
+<div class="footer__content">
+<a class="g-logo-small footer__logo" href="https://www.ted.com/">TED</a>
+<div class="footer__content__links">
+<nav class="footer__section" role="navigation">
+<h3 class="footer__title">
+Programs &amp; initiatives
+</h3>
+<ul class="footer__links">
+<li class="m5"><a class="footer__link" href="https://www.ted.com/about/programs-initiatives/tedx-program">TEDx</a></li>
+<li class="m5"><a class="footer__link" href="https://www.ted.com/about/programs-initiatives/ted-prize">TED Prize</a></li>
+<li class="m5"><a class="footer__link" href="https://www.ted.com/about/programs-initiatives/ted-fellows-program">TED Fellows</a></li>
+<li class="m5"><a class="footer__link" href="https://www.ted.com/about/programs-initiatives/ted-ed">TED Ed</a></li>
+<li class="m5"><a class="footer__link" href="https://www.ted.com/about/programs-initiatives/ted-translators">TED Translators</a></li>
+<li class="m5"><a class="footer__link" href="https://www.ted.com/about/programs-initiatives/ted-books">TED Books</a></li>
+<li class="m5"><a class="footer__link" href="https://www.ted.com/about/programs-initiatives/ted-institute">TED Institute</a></li>
+</ul>
+</nav>
+<nav class="footer__section" role="navigation">
+<h3 class="footer__title">
+Ways to get TED
+</h3>
+<ul class="footer__links">
+<li class="m5"><a class="footer__link" href="https://www.ted.com/read/ted-podcasts/ted-radio-hour">TED Radio Hour on NPR</a></li>
+<li class="m5"><a class="footer__link" href="https://www.ted.com/about/programs-initiatives/ted-talks/ways-to-get-ted-talks">More ways to get TED</a></li>
+</ul>
+</nav>
+<nav class="footer__section" role="navigation">
+<h3 class="footer__title">Follow TED</h3>
+<ul class="footer__links">
+<li class="m5"><a class="footer__link" target="_blank" href="https://www.facebook.com/TED">Facebook</a></li>
+<li class="m5"><a class="footer__link" target="_blank" href="https://twitter.com/tedtalks">Twitter</a></li>
+<li class="m5"><a class="footer__link" target="_blank" href="https://www.pinterest.com/tednews">Pinterest</a></li>
+<li class="m5"><a class="footer__link" target="_blank" href="https://instagram.com/ted">Instagram</a></li>
+<li class="m5"><a class="footer__link" target="_blank" href="https://www.youtube.com/ted">YouTube</a></li>
+<li><a class="footer__link" href="http://blog.ted.com/">TED Blog</a></li>
+</ul>
+</nav>
+<nav class="footer__section" role="navigation">
+<h3 class="footer__title">Our community</h3>
+<ul class="footer__links">
+<li class="m5"><a class="footer__link" href="https://www.ted.com/people/speakers">TED Speakers</a></li>
+<li class="m5"><a class="footer__link" href="https://www.ted.com/people/fellows">TED Fellows</a></li>
+<li class="m5"><a class="footer__link" href="https://www.ted.com/people/translators">TED Translators</a></li>
+<li class="m5"><a class="footer__link" rel="nofollow" href="https://www.ted.com/people/tedx">TEDx Organizers</a></li>
+<li class="m5"><a class="footer__link" href="https://www.ted.com/people">TED Community</a></li>
+</ul>
+</nav>
+</div>
+<div class="footer__content__forms">
+<form class="footer-newsletter footer__section footer__section--form p-r:.8">
+<h3 class="footer__title">Want personalized recommendations?</h3>
+<div class="c:black f:.9 m-b:2">
+Join
+<span class="f-w:700">
+TED Recommends
+</span>
+and get the perfect ideas selected just for you.
+</div>
+<a class="ga-link bg:gray-dd b-r:.2 c:white hover/c:white d:i-b f:1 f-w:700 p-y:1 p-x:4 t-d:n" data-ga-action="getStarted" data-ga-category="footer" data-ga-label="recommends" href="https://www.ted.com/recommends?exploreCTASource=footer.link">
+Get started
+</a>
+</form>
+<form class="footer__section" style="display:none;">
+<h3 class="footer__title">Language Selector</h3>
+<p>TED.com translations are made possible by volunteer
+translators. Learn more about the
+<a href="https://www.ted.com/pages/open_translation_project">Open Translation Project</a>.</p>
+<select class="form-control" disabled="">
+<option>English</option>
+</select>
+</form>
+</div>
+</div>
+</div>
+<div class="footer__services">
+<div class="container footer__services__container">
+<nav role="navigation">
+<ul class="footer__links">
+<li><a class="footer__service" href="https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy">TED Talks Usage Policy</a></li>
+<li><a class="footer__service" href="https://www.ted.com/about/our-organization/our-policies-terms/privacy-policy">Privacy Policy</a></li>
+<li><a class="footer__service" href="https://www.ted.com/about/partner-with-ted">Advertising / Partnership</a></li>
+<li><a class="footer__service" href="https://www.ted.com/about/our-organization/our-policies-terms/ted-com-terms-of-use">TED.com Terms of Use</a></li>
+<li><a class="footer__service" href="https://www.ted.com/about/our-organization/jobs-at-ted">Jobs</a></li>
+<li><a class="footer__service" href="https://www.ted.com/about/our-organization/contact-us/press-and-media-information">Press</a></li>
+<li><a class="footer__service" href="https://support.ted.com/">Help</a></li>
+</ul>
+</nav>
+<p class="footer__service footer__service--info" role="contentinfo">
+© TED Conferences, LLC. All rights reserved.
+</p>
+</div>
+</div>
+</footer></div>
+<a class="shoji__lattice" href="https://www.ted.com/talks/jer_thorp_make_data_more_human#" id="shoji-lattice"></a>
+</div>
+</div>
+<script src="./Jer Thorp_ Make data more human _ TED Talk_files/manifest-9c4b2c67fc12dbc4fe6c.js"></script>
+<script src="./Jer Thorp_ Make data more human _ TED Talk_files/750758b5212c04c746e1.chunk.js"></script>
+<script async="" src="./Jer Thorp_ Make data more human _ TED Talk_files/c14904318f5fada7428f.chunk.js"></script><script>
+  (function() {
+    var gads = document.createElement("script");
+    gads.async = true;
+    gads.type = "text/javascript";
+    var useSSL = "https:" == document.location.protocol;
+    gads.src = (useSSL ? "https:" : "http:") + "//www.googletagservices.com/tag/js/gpt.js";
+    var node = document.getElementsByTagName("script")[0];
+    node.parentNode.insertBefore(gads, node);
+  })();
+</script><script>
+  (function(s,o,b,a,m){
+    a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+    a.async=1;a.src=b;
+    m.parentNode.insertBefore(a,m)
+  })(document,'script','https://www.google-analytics.com/analytics.js');
+</script><script>
+  var _comscore = _comscore || [];
+  _comscore.push({ c1: "2", c2: "7341760" });
+  (function() {
+    var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+    s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+    el.parentNode.insertBefore(s, el);
+  })();
+</script><script>
+  (function(d,s,u,e,m,r){r=(d.location.search||'').match(/[?&](geo=[A-Z]{2})\b/);e=d.createElement(s),m=d.getElementsByTagName(s)[0];e.async=1;e.src=u+(r?'&'+r[1]:'');m.parentNode.insertBefore(e,m)})(document,'script','https://geo-assets.tedcdn.com/cookie-notice/tcn.js?cb=1.1.0')
+</script><div class="ReactModalPortal"></div><div style="display: none;"><div style="position: absolute;"><div style="display: none;"><video title="Advertisement" webkit-playsinline="true" playsinline="true" style="background-color: rgb(0, 0, 0); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"></video><div style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"></div></div><div style="display: none;"><video title="Advertisement" webkit-playsinline="true" playsinline="true" style="background-color: rgb(0, 0, 0); position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"></video><div style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px;"></div></div><iframe src="./Jer Thorp_ Make data more human _ TED Talk_files/bridge3.260.1_en(1).html" allowfullscreen="" allow="autoplay" style="border: 0px; opacity: 0; margin: 0px; padding: 0px; position: relative;"></iframe></div></div><iframe id="google_osd_static_frame_2590204299151" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Jer Thorp_ Make data more human _ TED Talk_files/saved_resource(2).html"></iframe></body></html>
