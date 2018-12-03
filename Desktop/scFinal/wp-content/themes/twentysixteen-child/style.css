@@ -1,0 +1,38 @@
+/*
+Theme Name: Twenty Sixteen Child Theme
+Theme URI: 
+Description: A child theme of Twenty Sixteen
+Author: Suvidha
+Author URI: img210.schanana.imgd.ca
+Template: twentysixteen
+Version: 0.1.0
+*/
+
+/* To change the title size for Tamara Munzner */
+.entry-title {
+		font-size: 40px;
+		font-size: 1.5rem;
+		line-height: 1.225;
+		margin-bottom: 1.05em;
+    }
+    
+/* To change the title size of Next and Previous */
+.post-navigation .post-title {
+		font-size: 28px;
+		font-size: 1rem;
+		line-height: 1.25;
+    }
+    
+.post-navigation {
+border-top: 2px solid #d0d0d0;
+border-bottom: 2px solid #d0d0d0;
+
+}
+.post-navigation div + div {
+border-top: 2px solid #d0d0d0 !important;
+}
+.widget {
+border-top: 2px solid #d0d0d0 !important;
+margin-bottom: 12px !important;
+padding-top: 12px !important;
+}
